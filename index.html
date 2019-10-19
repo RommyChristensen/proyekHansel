@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/bootstrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <title>Index Page</title>
+    <style>
+        .back {
+            background-image: linear-gradient(transparent, transparent, black), url("background.jpg");
+            background-size: cover;
+            height: 60vh;
+        }
+
+        .page-part {
+            margin-bottom: 0px !important;
+            margin-top: 0px !important;
+            padding: 1%;
+        }
+
+        .square {
+            border-radius: 0px !important;
+        }
+
+        .h-2 {
+            min-height: 20vh;
+        }
+
+        .h-3 {
+            min-height: 30vh;
+        }
+
+        .h-4 {
+            min-height: 40vh;
+        }
+
+        .h-40 {
+            min-height: 40%;
+        }
+
+        .h-50 {
+            min-height: 50%;
+        }
+
+        .h-60 {
+            min-height: 60%;
+        }
+
+        .h-100 {
+            min-height: 100%;
+        }
+
+        .form-regis:hover {
+            box-shadow: 1px 1px 20px 1px;
+            transition: 1s;
+        }
+
+        .footer,
+        .footer h3 {
+            color: white;
+        }
+
+        .social-link {
+            text-decoration: none;
+            color: white;
+            margin: 5px;
+        }
+
+        .social-link:hover {
+            color: black;
+        }
+
+        .contact-item {
+            margin-bottom: 3%;
+        }
+
+        .navbar {
+            border: 0px;
+            border-radius: 0px;
+            margin-bottom: 0px;
+        }
+
+        .navbar-brand {
+            font-family: 'Pacifico', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#items">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    Brand
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="items">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a href="#loc" class="">Event Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gal" class="">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#reg" class="">Registration</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- START PAGE CONTENT -->
+    <div class="content full-height">
+        <!-- START JUMBOTRON -->
+        <div class="jumbotron no-padding page-part" data-pages="parallax">
+            <div class="inner">
+                <div class="back">
+                </div>
+            </div>
+        </div><!-- END JUMBOTRON -->
+
+        <div class="container-fluid container-fixed-lg no-padding page-part">
+            <div id="loc" class="bg-master-lighter square h-4 page-part location">
+                <div class="container-fluid">
+                    <div class="col-md-6">
+                        <h4>Location</h4>
+                        <div class="page-part bg-white h-4">
+                            <iframe class="h-4"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31660.442045137934!2d112.74816942866777!3d-7.29133360536292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbdf63618101%3A0xf5de23e4d7e7307c!2sGereja+Bethel+Injil+Sepenuh!5e0!3m2!1sen!2sid!4v1548910292435"
+                                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="page-part h-4">
+                            <h4>Details Event</h4>
+                            <hr>
+                            <table>
+                                <tr>
+                                    <td><span class="fa fa-clock-o fa-2x"></span></td>
+                                    <td>
+                                        <h5> 18.00 - 21.00</h5>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="fa fa-map-marker fa-2x"></span></td>
+                                    <td>
+                                        <h5> High Mountain, California</h5>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="fa fa-user fa-2x"></span></td>
+                                    <td>
+                                        <h5> Hansel - 087884914473</h5>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="fa fa-info fa-2x"></span></td>
+                                    <td>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque
+                                            quibusdam voluptates, sequi qui, reiciendis, facilis et voluptate
+                                            dignissimos debitis laboriosam minus temporibus quaerat ab ducimus doloribus
+                                            impedit? Sed, aspernatur?
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gal" class="page-part h-4 bg-master-lightest gallery">
+                <div class="container-fluid">
+                    <div class="text-center">
+                        <h2>Gallery</h2>
+                    </div>
+                    <div class="gallery-wrapper">
+                        <div class="row">
+                            <div class="container">
+                                <div class="col-md-3 col-sm-5">
+                                    <div class="gallery-item" data-width="1" data-height="1">
+                                        <!-- START PREVIEW -->
+                                        <img src="assets/img/gallery/1.jpg" alt="" class="image-responsive-height">
+                                        <!-- END PREVIEW -->
+                                        <!-- START ITEM OVERLAY DESCRIPTION -->
+                                        <div class="overlayer bottom-left full-width">
+                                            <div class="overlayer-wrapper item-info ">
+                                                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
+                                                    <div class="">
+                                                        <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja
+                                                        </p>
+                                                        <h5
+                                                            class="pull-right semi-bold text-white font-montserrat bold">
+                                                            $25.00</h5>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="m-t-10">
+                                                        <div class="thumbnail-wrapper d32 circular m-t-5">
+                                                            <img width="40" height="40"
+                                                                src="assets/img/profiles/avatar.jpg"
+                                                                data-src="assets/img/profiles/avatar.jpg"
+                                                                data-src-retina="assets/img/profiles/avatar2x.jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="inline m-l-10">
+                                                            <p class="no-margin text-white fs-12">Designed by Alex
+                                                                Nester
+                                                            </p>
+                                                            <p class="rating">
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </p>
+                                                        </div>
+                                                        <div class="pull-right m-t-10">
+                                                            <button class="btn btn-white btn-xs btn-mini bold fs-14"
+                                                                type="button">+</button>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END PRODUCT OVERLAY DESCRIPTION -->
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-5">
+                                    <div class="gallery-item " data-width="1" data-height="1">
+                                        <!-- START PREVIEW -->
+                                        <img src="assets/img/gallery/3.jpg" alt="" class="image-responsive-height">
+                                        <!-- END PREVIEW -->
+                                        <!-- START ITEM OVERLAY DESCRIPTION -->
+                                        <div class="overlayer bottom-left full-width">
+                                            <div class="overlayer-wrapper item-info ">
+                                                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
+                                                    <div class="">
+                                                        <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja
+                                                        </p>
+                                                        <h5
+                                                            class="pull-right semi-bold text-white font-montserrat bold">
+                                                            $25.00</h5>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="m-t-10">
+                                                        <div class="thumbnail-wrapper d32 circular m-t-5">
+                                                            <img width="40" height="40"
+                                                                src="assets/img/profiles/avatar.jpg"
+                                                                data-src="assets/img/profiles/avatar.jpg"
+                                                                data-src-retina="assets/img/profiles/avatar2x.jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="inline m-l-10">
+                                                            <p class="no-margin text-white fs-12">Designed by Alex
+                                                                Nester
+                                                            </p>
+                                                            <p class="rating">
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </p>
+                                                        </div>
+                                                        <div class="pull-right m-t-10">
+                                                            <button class="btn btn-white btn-xs btn-mini bold fs-14"
+                                                                type="button">+</button>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END PRODUCT OVERLAY DESCRIPTION -->
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-5">
+                                    <div class="gallery-item " data-width="1" data-height="1">
+                                        <!-- START PREVIEW -->
+                                        <img src="assets/img/gallery/4.jpg" alt="" class="image-responsive-height">
+                                        <!-- END PREVIEW -->
+                                        <!-- START ITEM OVERLAY DESCRIPTION -->
+                                        <div class="overlayer bottom-left full-width">
+                                            <div class="overlayer-wrapper item-info ">
+                                                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
+                                                    <div class="">
+                                                        <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja
+                                                        </p>
+                                                        <h5
+                                                            class="pull-right semi-bold text-white font-montserrat bold">
+                                                            $25.00</h5>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="m-t-10">
+                                                        <div class="thumbnail-wrapper d32 circular m-t-5">
+                                                            <img width="40" height="40"
+                                                                src="assets/img/profiles/avatar.jpg"
+                                                                data-src="assets/img/profiles/avatar.jpg"
+                                                                data-src-retina="assets/img/profiles/avatar2x.jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="inline m-l-10">
+                                                            <p class="no-margin text-white fs-12">Designed by Alex
+                                                                Nester
+                                                            </p>
+                                                            <p class="rating">
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </p>
+                                                        </div>
+                                                        <div class="pull-right m-t-10">
+                                                            <button class="btn btn-white btn-xs btn-mini bold fs-14"
+                                                                type="button">+</button>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END PRODUCT OVERLAY DESCRIPTION -->
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-5">
+                                    <div class="gallery-item " data-width="1" data-height="1">
+                                        <!-- START PREVIEW -->
+                                        <img src="assets/img/gallery/4.jpg" alt="" class="image-responsive-height">
+                                        <!-- END PREVIEW -->
+                                        <!-- START ITEM OVERLAY DESCRIPTION -->
+                                        <div class="overlayer bottom-left full-width">
+                                            <div class="overlayer-wrapper item-info ">
+                                                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
+                                                    <div class="">
+                                                        <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja
+                                                        </p>
+                                                        <h5
+                                                            class="pull-right semi-bold text-white font-montserrat bold">
+                                                            $25.00</h5>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="m-t-10">
+                                                        <div class="thumbnail-wrapper d32 circular m-t-5">
+                                                            <img width="40" height="40"
+                                                                src="assets/img/profiles/avatar.jpg"
+                                                                data-src="assets/img/profiles/avatar.jpg"
+                                                                data-src-retina="assets/img/profiles/avatar2x.jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="inline m-l-10">
+                                                            <p class="no-margin text-white fs-12">Designed by Alex
+                                                                Nester
+                                                            </p>
+                                                            <p class="rating">
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </p>
+                                                        </div>
+                                                        <div class="pull-right m-t-10">
+                                                            <button class="btn btn-white btn-xs btn-mini bold fs-14"
+                                                                type="button">+</button>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END PRODUCT OVERLAY DESCRIPTION -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="container">
+                                <div class="col-md-3 col-sm-5">
+                                    <div class="gallery-item" data-width="1" data-height="1">
+                                        <!-- START PREVIEW -->
+                                        <img src="assets/img/gallery/1.jpg" alt="" class="image-responsive-height">
+                                        <!-- END PREVIEW -->
+                                        <!-- START ITEM OVERLAY DESCRIPTION -->
+                                        <div class="overlayer bottom-left full-width">
+                                            <div class="overlayer-wrapper item-info ">
+                                                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
+                                                    <div class="">
+                                                        <p class="pull-left bold text-white fs-14 p-t-10">Happy
+                                                            Ninja
+                                                        </p>
+                                                        <h5
+                                                            class="pull-right semi-bold text-white font-montserrat bold">
+                                                            $25.00</h5>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="m-t-10">
+                                                        <div class="thumbnail-wrapper d32 circular m-t-5">
+                                                            <img width="40" height="40"
+                                                                src="assets/img/profiles/avatar.jpg"
+                                                                data-src="assets/img/profiles/avatar.jpg"
+                                                                data-src-retina="assets/img/profiles/avatar2x.jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="inline m-l-10">
+                                                            <p class="no-margin text-white fs-12">Designed by Alex
+                                                                Nester
+                                                            </p>
+                                                            <p class="rating">
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </p>
+                                                        </div>
+                                                        <div class="pull-right m-t-10">
+                                                            <button class="btn btn-white btn-xs btn-mini bold fs-14"
+                                                                type="button">+</button>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END PRODUCT OVERLAY DESCRIPTION -->
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-5">
+                                    <div class="gallery-item " data-width="1" data-height="1">
+                                        <!-- START PREVIEW -->
+                                        <img src="assets/img/gallery/3.jpg" alt="" class="image-responsive-height">
+                                        <!-- END PREVIEW -->
+                                        <!-- START ITEM OVERLAY DESCRIPTION -->
+                                        <div class="overlayer bottom-left full-width">
+                                            <div class="overlayer-wrapper item-info ">
+                                                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
+                                                    <div class="">
+                                                        <p class="pull-left bold text-white fs-14 p-t-10">Happy
+                                                            Ninja
+                                                        </p>
+                                                        <h5
+                                                            class="pull-right semi-bold text-white font-montserrat bold">
+                                                            $25.00</h5>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="m-t-10">
+                                                        <div class="thumbnail-wrapper d32 circular m-t-5">
+                                                            <img width="40" height="40"
+                                                                src="assets/img/profiles/avatar.jpg"
+                                                                data-src="assets/img/profiles/avatar.jpg"
+                                                                data-src-retina="assets/img/profiles/avatar2x.jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="inline m-l-10">
+                                                            <p class="no-margin text-white fs-12">Designed by Alex
+                                                                Nester
+                                                            </p>
+                                                            <p class="rating">
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </p>
+                                                        </div>
+                                                        <div class="pull-right m-t-10">
+                                                            <button class="btn btn-white btn-xs btn-mini bold fs-14"
+                                                                type="button">+</button>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END PRODUCT OVERLAY DESCRIPTION -->
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-5">
+                                    <div class="gallery-item " data-width="1" data-height="1">
+                                        <!-- START PREVIEW -->
+                                        <img src="assets/img/gallery/4.jpg" alt="" class="image-responsive-height">
+                                        <!-- END PREVIEW -->
+                                        <!-- START ITEM OVERLAY DESCRIPTION -->
+                                        <div class="overlayer bottom-left full-width">
+                                            <div class="overlayer-wrapper item-info ">
+                                                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
+                                                    <div class="">
+                                                        <p class="pull-left bold text-white fs-14 p-t-10">Happy
+                                                            Ninja
+                                                        </p>
+                                                        <h5
+                                                            class="pull-right semi-bold text-white font-montserrat bold">
+                                                            $25.00</h5>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="m-t-10">
+                                                        <div class="thumbnail-wrapper d32 circular m-t-5">
+                                                            <img width="40" height="40"
+                                                                src="assets/img/profiles/avatar.jpg"
+                                                                data-src="assets/img/profiles/avatar.jpg"
+                                                                data-src-retina="assets/img/profiles/avatar2x.jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="inline m-l-10">
+                                                            <p class="no-margin text-white fs-12">Designed by Alex
+                                                                Nester
+                                                            </p>
+                                                            <p class="rating">
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </p>
+                                                        </div>
+                                                        <div class="pull-right m-t-10">
+                                                            <button class="btn btn-white btn-xs btn-mini bold fs-14"
+                                                                type="button">+</button>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END PRODUCT OVERLAY DESCRIPTION -->
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-5">
+                                    <div class="gallery-item " data-width="1" data-height="1">
+                                        <!-- START PREVIEW -->
+                                        <img src="assets/img/gallery/4.jpg" alt="" class="image-responsive-height">
+                                        <!-- END PREVIEW -->
+                                        <!-- START ITEM OVERLAY DESCRIPTION -->
+                                        <div class="overlayer bottom-left full-width">
+                                            <div class="overlayer-wrapper item-info ">
+                                                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
+                                                    <div class="">
+                                                        <p class="pull-left bold text-white fs-14 p-t-10">Happy
+                                                            Ninja
+                                                        </p>
+                                                        <h5
+                                                            class="pull-right semi-bold text-white font-montserrat bold">
+                                                            $25.00</h5>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="m-t-10">
+                                                        <div class="thumbnail-wrapper d32 circular m-t-5">
+                                                            <img width="40" height="40"
+                                                                src="assets/img/profiles/avatar.jpg"
+                                                                data-src="assets/img/profiles/avatar.jpg"
+                                                                data-src-retina="assets/img/profiles/avatar2x.jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="inline m-l-10">
+                                                            <p class="no-margin text-white fs-12">Designed by Alex
+                                                                Nester
+                                                            </p>
+                                                            <p class="rating">
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star rated"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </p>
+                                                        </div>
+                                                        <div class="pull-right m-t-10">
+                                                            <button class="btn btn-white btn-xs btn-mini bold fs-14"
+                                                                type="button">+</button>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END PRODUCT OVERLAY DESCRIPTION -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reg" class="page-part bg-master-lighter registration">
+                <div class="text-center">
+                    <h3>Registration</h3>
+                    <!-- Nama lengkap
+                    Alamat
+                    Email
+                    No telp
+                    Jumlah orang (drop down kasi pilihan 1 sama 2) -->
+                </div>
+                <div class="container">
+                    <div class="panel panel-default form-regis">
+                        <div class="panel-body">
+                            <form action="#" role="form">
+                                <div class="form-group">
+                                    <label>Nama Lengkap</label>
+                                    <input type="text" name="fullname" placeholder="John Doe" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Alamat</label>
+                                    <input type="text" name="alamat" placeholder="Ngagel Jaya Tengah 74 - 77"
+                                        class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label>No Telp</label>
+                                    <input type="number" name="telp" placeholder="+6287884914473"
+                                        class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" name="telp" placeholder="johndoe@gmail.com"
+                                        class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Jumlah Orang</label>
+                                    <select name="jum" class="form-control">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </div>
+                                <button type="submit" value="submit" class="btn btn-success btn-block"><span
+                                        class="fa fa-paper-plane"></span> Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-part h-3 bg-info footer">
+                <div class="container">
+                    <div class="col-md-8">
+                        <h3>Title</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam debitis rerum quaerat! Culpa
+                            voluptas rem fugiat tempora magnam iste sit cupiditate quam tenetur asperiores soluta id,
+                            cumque illum pariatur quisquam!</p>
+                        <p>
+                            <a class="social-link" href=""><span class="fa fa-facebook-square fa-2x"></span></a>
+                            <a class="social-link" href=""><span class="fa fa-instagram fa-2x"></span></a>
+                            <a class="social-link" href=""><span class="fa fa-google-plus-circle fa-2x"></span></a>
+                            <a class="social-link" href=""><span class="fa fa-twitter fa-2x"></span></a>
+                        </p>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3">
+                        <h3>Contact</h3>
+                        <div class="row contact-item">
+                            <div class="col-md-2 text-center"><span class="fa fa-map-marker"></span></div>
+                            <div class="col-md-10">High Mountain, California</div>
+                        </div>
+
+                        <div class="row contact-item">
+                            <div class="col-md-2 text-center"><span class="fa fa-user"></span></div>
+                            <div class="col-md-10">Ong Hansel Santoso</div>
+                        </div>
+
+                        <div class="row contact-item">
+                            <div class="col-md-2 text-center"><span class="fa fa-envelope"></span></div>
+                            <div class="col-md-10">johndoe@gmail.com</div>
+                        </div>
+
+                        <div class="row contact-item">
+                            <div class="col-md-2 text-center"><span class="fa fa-globe"></span></div>
+                            <div class="col-md-10">www.istts.ac.id</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <hr>
+                    <div class="text-center">
+                        Copyright &copy;2019. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/modernizr.custom.js" type="text/javascript"></script>
+        <script src="assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/bootstrapv3/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/jquery/jquery-easy.js" type="text/javascript"></script>
+        <script src="assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/jquery-bez/jquery.bez.min.js"></script>
+        <script src="assets/plugins/jquery-ios-list/jquery.ioslist.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/jquery-actual/jquery.actual.min.js"></script>
+        <script src="assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <script type="text/javascript" src="assets/plugins/select2/js/select2.full.min.js"></script>
+        <script type="text/javascript" src="assets/plugins/classie/classie.js"></script>
+        <script src="assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/bootstrap3-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+        <script type="text/javascript" src="assets/plugins/jquery-autonumeric/autoNumeric.js"></script>
+        <script type="text/javascript" src="assets/plugins/dropzone/dropzone.min.js"></script>
+        <script type="text/javascript" src="assets/plugins/bootstrap-tag/bootstrap-tagsinput.min.js"></script>
+        <script type="text/javascript" src="assets/plugins/jquery-inputmask/jquery.inputmask.min.js"></script>
+        <script src="assets/plugins/bootstrap-form-wizard/js/jquery.bootstrap.wizard.min.js" type="text/javascript">
+        </script>
+        <script src="assets/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>
+        <script src="assets/plugins/summernote/js/summernote.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/moment/moment.min.js"></script>
+        <script src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+        <script src="assets/plugins/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>
+        <!-- END VENDOR JS -->
+        <!-- BEGIN CORE TEMPLATE JS -->
+        <script src="pages/js/pages.min.js"></script>
+        <!-- END CORE TEMPLATE JS -->
+        <!-- BEGIN PAGE LEVEL JS -->
+        <script src="assets/js/form_wizard.js" type="text/javascript"></script>
+        <script src="assets/js/gallery.js" type="text/javascript"></script>
+        <script src="assets/js/scripts.js" type="text/javascript"></script>
+
+</body>
+
+</html>
