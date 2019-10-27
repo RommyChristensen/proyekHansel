@@ -37,10 +37,6 @@
             background-color: rgba(0, 0, 0, 0.7);
         }
 
-        .navnav .container {
-            padding: 0.1%;
-        }
-
         .navnav .navbar-brand {
             color: white;
             font-size: 20pt;
@@ -150,20 +146,38 @@
             font-size: 70pt !important;
         }
 
+        .quote1{font-size: 20pt;}
+        .quote2{font-size: 60pt};
+
         @media all and (max-width: 1386px){
             .caption-title{
                 font-size: 50pt !important;
             }
+            .navbar-brand{
+                font-size: 10pt;
+            }
+            .quote1{font-size: 30pt;}
+            .quote2{font-size: 45pt};
         }
 
         @media all and (max-width: 1024px){
             .caption-title{
                 font-size: 40pt !important;
             }
+            .navbar-brand{
+                font-size: 10pt;
+            }
+            .quote1{font-size: 25pt;}
+            .quote2{font-size: 40pt};
         }
 
         @media all and (max-width: 768px){
             .caption-title{
                 font-size: 20pt !important;
             }
+            .navbar-brand{
+                font-size: 10pt !important;
+            }
+            .quote1{font-size: 20pt;}
+            .quote2{font-size: 35pt};
         }
