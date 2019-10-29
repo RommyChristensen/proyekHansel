@@ -1,0 +1,183 @@
+
+        * {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .carousel-caption .caption-title {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .navnav .container .navbar-brand {
+            font-family: 'Raleway', sans-serif;
+            font-size: 15pt;
+        }
+
+        .rale {
+            font-family: 'Raleway', sans-serif;
+            font-size: 15pt;
+        }
+
+        .carousel-caption p {
+            font-size: 17pt;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .carousel-item:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .navnav {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .navnav .navbar-brand {
+            color: white;
+            font-size: 20pt;
+        }
+
+        .navnav .container .collapse .navbar-nav li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20pt;
+        }
+
+        .navnav .container .collapse .navbar-nav li a:hover {
+            color: rgba(255, 255, 255, 0.7);
+            transition: 1s;
+        }
+
+        .carousel-item {
+            position: relative;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            top: 40%;
+        }
+
+        .btn-transparent {
+            border-radius: 0px;
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
+            padding: 20px;
+            font-size: 20pt;
+        }
+
+        .btn-transparent:hover {
+            background-color: white;
+            color: black;
+            transition: 1s;
+        }
+
+        .h-full {
+            height: 100vh;
+        }
+
+        .br {
+            border-right: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 2px;
+            display: inline-block;
+            position: relative;
+            width: 300px;
+        }
+
+        .card-1 {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+        }
+
+        .card-1:hover {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+
+        .footer,
+        .footer h3 {
+            color: white;
+        }
+
+        .social-link {
+            text-decoration: none;
+            color: white;
+            margin: 5px;
+        }
+
+        .social-link:hover {
+            opacity: 0.9;
+        }
+
+        .contact-item {
+            margin-bottom: 3%;
+        }
+
+        .img-event {
+            background-image: url("../wedding/couple3.jpg");
+            background-size: 100% 100%;
+            height: 400px;
+            background-repeat: no-repeat;
+        }
+
+        #loc,
+        #reg {
+            background-color: rgb(235, 235, 235);
+        }
+
+        .form-regis{
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .caption-title{
+            font-size: 70pt !important;
+        }
+
+        .quote1{font-size: 20pt;}
+        .quote2{font-size: 60pt};
+
+        @media all and (max-width: 1386px){
+            .caption-title{
+                font-size: 50pt !important;
+            }
+            .navbar-brand{
+                font-size: 10pt;
+            }
+            .quote1{font-size: 30pt;}
+            .quote2{font-size: 45pt};
+        }
+
+        @media all and (max-width: 1024px){
+            .caption-title{
+                font-size: 40pt !important;
+            }
+            .navbar-brand{
+                font-size: 10pt;
+            }
+            .quote1{font-size: 25pt;}
+            .quote2{font-size: 40pt};
+        }
+
+        @media all and (max-width: 768px){
+            .caption-title{
+                font-size: 20pt !important;
+            }
+            .navbar-brand{
+                font-size: 10pt !important;
+            }
+            .quote1{font-size: 20pt;}
+            .quote2{font-size: 35pt};
+        }
