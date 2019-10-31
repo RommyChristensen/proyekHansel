@@ -20,7 +20,10 @@ class CreateTamuTable extends Migration
             $table->text('alamat');
             $table->integer('telp');
             $table->tinyInteger('kuota');
-            $table->string('kehadiran',30);
+            $table->tinyInteger('kehadiran');
+            $table->tinyInteger('verfikasi_Email',0)->default('0')->unsigned();
+            $table->tinyInteger('verfikasi_Admin',0)->default('0')->unsigned();
+            $table->tinyInteger('verfikasi_Kehadiran',0)->default('0')->unsigned();
             $table->timestamps();
         });
     }
