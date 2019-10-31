@@ -20,6 +20,7 @@ Route::get('/Burger123', function () {
 
 Route::get('/Burger123/insertAttendance', 'AdminController@addAttendance');
 
+Route::post('/Burger123/editAttendance', 'AdminController@editAttendance');
 Route::post('/Burger123/addProses', 'AdminController@addProses');
 Route::post('/Burger123/deleteProses', 'AdminController@deleteProses');
 Route::post('/Burger123/editProses', 'AdminController@editProses');

@@ -41,6 +41,12 @@ class AdminController extends Controller
         return view('AdminLayout.addAttendance');
     }
 
+    public function editAttendance(Request $request){
+        $id = $request['btnEdit'];
+        $edit = DB::table('tamu')->where('id', $id)->get()->toArray();
+        return view('AdminLayout.editAttendance', ['edited' => $edit]);
+    }
+
     public function addProses(Request $request){
         $newGuests = new Tamu();
         $newGuests->nama = $request->nama;  
@@ -90,6 +96,28 @@ class AdminController extends Controller
     }
 
     public function editProses(Request $request){
+        $id = $request['id'];
+        $nama = $request['nama'];
+        $email = $request['email'];
+        $alamat = $request['alamat'];
+        $kuota = $request['kuota'];
+        $kehadiran = $request['kehadiran'];
+        $updated = date("Y-m-d");
+
+        $res = DB::table('tamu')
+            ->where('id', $id)
+            ->update([
+                'nama' => $nama,
+                'email' => $email,
+                'alamat' => $alamat,
+                'kuota' => $kuota,
+                'kehadiran' => $kehadiran,
+                'updated_at' => $updated
+            ]);
         
+            if($res) return view('AdminLayout.adminDashboard', ['tamu' => $this->getTamu()]);
+            else echo "failed";
+
+
     }
 }

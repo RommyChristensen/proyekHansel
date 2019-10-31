@@ -23,11 +23,6 @@
     <link href="{{asset('assets/plugins/switchery/css/switchery.min.css')}}" rel="stylesheet" type="text/css" media="screen" />
     <link href="{{asset('pages/css/pages-icons.css')}}" rel="stylesheet" type="text/css">
     <link class="main-stylesheet" href="{{asset('pages/css/pages.css')}}" rel="stylesheet" type="text/css" />
-    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css"> --}}
-    <link type="text/css" rel="stylesheet" href="{{asset('assets/plugins/jquery-datatable/media/css/jquery.dataTables.css')}}">
-    <link type="text/css" rel="stylesheet" href="{{asset('assets/plugins/jquery-datatable/extensions/FixedColumns/css/dataTables.fixedColumns.min.css')}}">
-    <link media="screen" type="text/css" rel="stylesheet" href="{{asset('assets/plugins/datatables-responsive/css/datatables.responsive.css')}}">
   </head>
   <body class="fixed-header ">
     <!-- BEGIN SIDEBPANEL-->
@@ -56,6 +51,12 @@
               <span class="title">Add New</span>
             </a>
             <span class="icon-thumbnail">A</span>
+          </li>
+          <li class="">
+            <a href="email.html" class="detailed">
+              <span class="title">Edit Existing</span>
+            </a>
+            <span class="icon-thumbnail">E</span>
           </li>
         </ul>
         <div class="clearfix"></div>
@@ -99,13 +100,6 @@
           </div>
         </div>
         <!-- END MOBILE CONTROLS -->
-        <div class=" pull-left sm-table hidden-xs hidden-sm">
-          <div class="header-inner">
-            <div class="brand inline">
-              <h3>Dashboard</h3>
-            </div>
-          </div>
-        </div>
         <div class=" pull-right">
           <!-- START User Info-->
           <div class="visible-lg visible-md m-t-10">
@@ -142,72 +136,92 @@
           <div class="jumbotron" data-pages="parallax">
             <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
               <div class="inner">
-
+                  
               </div>
             </div>
           </div>
           <!-- END JUMBOTRON -->
           <!-- START CONTAINER FLUID -->
           <div class="container-fluid container-fixed-lg">
-            <!-- BEGIN PlACE PAGE CONTENT HERE -->
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <div class="panel-title">
-                  <h3>Data User</h3>
+              <!-- BEGIN PlACE PAGE CONTENT HERE -->
+              <form id="reg" role="form" method="post" action="{{url('/Burger123/editProses')}}">
+                @csrf
+                  <div class="col-md-2"></div>
+                  <div class="col-md-8">
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <div class="panel-title">
+                                  Registration Form
+                              </div>
+                          </div>
+                          <div class="panel-body">
+                              <input type="hidden" name="id" value={{$edited[0]->id}} >
+                              <div class="form-group">
+                                  <label>Full name</label>
+                                  <span class="help">e.g. "John Doe"</span>
+                                  <input type="text" value="{{$edited[0]->nama}}" name="nama" class="form-control">
+                                  @if ($errors->has('alamat'))
+                                    <span style="color:red">{{$errors->first('nama')}}</span>
+                                  @endif
+                              </div>
+                              <div class="form-group">
+                                  <label>Address</label>
+                                  <span class="help">e.g. "Ngagel Jaya 73 - 77"</span>
+                                  <input type="text" value="{{$edited[0]->alamat}}" name="alamat" class="form-control">
+                                  @if ($errors->has('alamat'))
+                                    <span style="color:red">{{$errors->first('alamat')}}</span>
+                                  @endif
+                              </div>
+                              <div class="form-group">
+                                  <label>Phone Number</label>
+                                  <span class="help">e.g. "087884914473"</span>
+                                  <input type="number" value="{{$edited[0]->telp}}" name="telp" class="form-control">
+                                  @if ($errors->has('telp'))
+                                    <span style="color:red">{{$errors->first('telp')}}</span>
+                                  @endif
+                              </div>
+                              <div class="form-group">
+                                  <label>Email</label>
+                                  <span class="help">e.g. "some@example.com"</span>
+                                  <input type="email" value="{{$edited[0]->email}}" name="email" class="form-control">
+                                  @if ($errors->has('email'))
+                                    <span style="color:red">{{$errors->first('email')}}</span>
+                                  @endif
+                              </div>
+                              <div class="form-group">
+                                  <label>Select Your Attendance</label>
+                                  <select name="kehadiran" class="full-width select2-hidden-accessible"
+                                      data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                                      <option value="1" {{($edited[0]->kehadiran == 1) ? "selected" : ""}}>Holy Matrimony</option>
+                                      <option value="2" {{($edited[0]->kehadiran == 2) ? "selected" : ""}}>Wedding Dinner</option>
+                                      <option value="3" {{($edited[0]->kehadiran == 3) ? "selected" : ""}}>Both</option>
+                                  </select>
+                                  @if ($errors->has('kehadiran'))
+                                    <span style="color:red">{{$errors->first('kehadiran')}}</span>
+                                  @endif
+                              </div>
+                              <div class="form-group">
+                                  <label>Number of People</label>
+                                  <select name="kuota" class="full-width select2-hidden-accessible"
+                                      data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                                      <option value="1" {{($edited[0]->kuota == 1) ? "selected" : ""}}>1</option>
+                                      <option value="2" {{($edited[0]->kuota == 2) ? "selected" : ""}}>2</option>
+                                  </select>
+                                  @if ($errors->has('kuota'))
+                                    <span style="color:red">{{$errors->first('kuota')}}</span>
+                                  @endif
+                              </div>
+                              <button type="submit" class="btn btn-block btn-success">Add Attendance</button>
+                              </div>
+                      </div>
                   </div>
-                  <div class="pull-right">
-                      <a href="{{url('/Burger123/insertAttendance')}}" class="btn btn-success">Add Row</a>
+                  <div class="col-md-2">
+                    
                   </div>
-                  </div>
-                  <div class="panel-body">
-                      <form role="form" method="post">
-                          @csrf
-                          <table id="myDataTable" class="table table-hover">
-                              <thead>
-                                  <tr>
-                                      <th>Nama</th>
-                                      <th>Email</th>
-                                      <th>Alamat</th>
-                                      <th>Telp</th>
-                                      <th>Kehadiran</th>
-                                      <th>Kuota</th>
-                                      <th>Action</th>
-                                  </tr>
-                              </thead>
-                              <tbody>
-                                  @foreach ($tamu as $item)
-                                  <tr>
-                                      <td>{{$item->nama}}</td>
-                                      <td>{{$item->email}}</td>
-                                      <td>{{$item->alamat}}</td>
-                                      <td>{{$item->telp}}</td>
-                                      <td>{{$item->kehadiran}}</td>
-                                      <td>{{$item->kuota}}</td>
-                                      <td>
-                                          <button type="submit" formaction="{{url('/Burger123/editAttendance')}}" name="btnEdit" value="{{$item->id}}" class="btn btn-info"><i
-                                                  class="fa fa-edit"></i></button>
-                                          <button type="submit" formaction="{{url('/Burger123/deleteProses')}}" name="btnDelete" value="{{$item->id}}"
-                                              class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                                      </td>
-                                  </tr>
-                                  @endforeach
-                              </tbody>
-                              <tfoot>
-                                  <tr>
-                                      <th>Nama</th>
-                                      <th>Email</th>
-                                      <th>Alamat</th>
-                                      <th>Telp</th>
-                                      <th>Kehadiran</th>
-                                      <th>Kuota</th>
-                                      <th>Action</th>
-                                  </tr>
-                              </tfoot>
-                          </table>
-                      </form>
-                  </div>
-            </div>
-            <!-- END PLACE PAGE CONTENT HERE -->
+              </form>
+
+
+              <!-- END PLACE PAGE CONTENT HERE -->
           </div>
           <!-- END CONTAINER FLUID -->
         </div>
@@ -218,7 +232,7 @@
         <div class="container-fluid container-fixed-lg footer">
           <div class="copyright sm-text-center">
             <p class="small no-margin pull-left sm-pull-reset">
-              <span class="hint-text">Copyright &copy; 2014 </span>
+              <span class="hint-text">Copyright &copy; 2019 </span>
               <span class="font-montserrat">REVOX</span>.
               <span class="hint-text">All rights reserved. </span>
               <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span>
@@ -235,23 +249,8 @@
     </div>
     <!-- END PAGE CONTAINER -->
     <!-- BEGIN VENDOR JS -->
-    
-    <script src="{{asset('assets/plugins/jquery/jquery-1.11.1.min.js')}}" type="text/javascript"></script>
-    <script type="text/javascript" src="{{asset('assets/plugins/jquery-datatable/media/js/jquery.dataTables.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('assets/plugins/jquery-datatable/extensions/TableTools/js/dataTables.tableTools.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('assets/plugins/jquery-datatable/extensions/Bootstrap/jquery-datatable-bootstrap.js')}}"></script>
-    <script src="{{asset('assets/plugins/datatables-responsive/js/datatables.responsive.js" type="text/javascript')}}"></script>
-    <script src="{{asset('assets/plugins/datatables-responsive/js/lodash.min.js" type="text/javascript')}}"></script>
-    {{-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script> --}}
-    <script>
-        $(document).ready(function() {
-            // $('#myDataTable').DataTable();
-
-        });
-    </script>
     <script src="{{asset('assets/plugins/pace/pace.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('assets/plugins/jquery/jquery-1.11.1.min.js')}}" type="text/javascript"></script>
     <script src="{{asset('assets/plugins/modernizr.custom.js')}}" type="text/javascript"></script>
     <script src="{{asset('assets/plugins/jquery-ui/jquery-ui.min.js')}}~" type="text/javascript"></script>
     <script src="{{asset('assets/plugins/bootstrapv3/js/bootstrap.min.js')}}" type="text/javascript"></script>
