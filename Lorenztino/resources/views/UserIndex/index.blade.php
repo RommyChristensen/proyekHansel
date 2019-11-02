@@ -53,21 +53,21 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="{{asset('wedding/couple.jpg')}}" alt="First slide">
+                <img class="d-block w-100" src="{{asset('wedding/MMZA (28).JPG')}}" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <p class="caption-title">LORENZTINO & SONIA</p>
                     <p>I have found the one whom my soul loves</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="{{asset('wedding/couple.jpg')}}" alt="Second slide">
+                <img class="d-block w-100" src="{{asset('wedding/MMZA (85).JPG')}}" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
                     <p class="caption-title">LORENZTINO & SONIA</p>
                     <p>I have found the one whom my soul loves</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="{{asset('wedding/couple.jpg')}}" alt="Third slide">
+                <img class="d-block w-100" src="{{asset('wedding/MMZA (112).JPG')}}" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
                     <p class="caption-title">LORENZTINO & SONIA</p>
                     <p>I have found the one whom my soul loves</p>
@@ -83,13 +83,10 @@
                 <div id="carousel2" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="{{asset('wedding/couple2.jpg')}}" alt="First slide">
+                            <img class="d-block w-100" src="{{asset('wedding/MMZB (7).JPG')}}" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="{{asset('wedding/couple2.jpg')}}" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="{{asset('wedding/couple2.jpg')}}" alt="Third slide">
+                            <img class="d-block w-100" src="{{asset('wedding/MMZB (253).JPG')}}" alt="Second slide">
                         </div>
                     </div>
 
@@ -122,8 +119,6 @@
     <!-- Event Detail -->
     <div class="container-fluid" id="loc">
         <div class="row">
-            <div class="col-md-6 text-center img-event">
-            </div>
             <div style="font-family: 'DM Serif Text', serif; padding-top: 7%;" class="col-md-6 text-center mb-5">
                 <h1>Holy Matrimony</h1>
                 <br>
@@ -136,10 +131,14 @@
 
                 </p>
             </div>
+            <div class="col-md-6 text-center img-event">
+            </div>
         </div>
     </div>
     <div class="container-fluid" id="loc">
         <div class="row">
+            <div class="col-md-6 text-center img-event">
+            </div>
             <div style="font-family:'lato', sans-serif; padding-top: 7%;" class="col-md-6 text-center mb-5">
                 <h1>Wedding Reception</h1>
                 <br>
@@ -151,8 +150,6 @@
                     <br>
 
                 </p>
-            </div>
-            <div class="col-md-6 text-center img-event">
             </div>
         </div>
     </div>
