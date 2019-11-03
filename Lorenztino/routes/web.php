@@ -17,6 +17,7 @@ Route::get('/', function () {
 Route::get('/Burger123', function () {
     return view('AdminLayout.loginAdmin');
 });
+Route::get('/Burger123/dashboard', 'AdminController@toDashboard');
 
 Route::get('/Burger123/insertAttendance', 'AdminController@addAttendance');
 

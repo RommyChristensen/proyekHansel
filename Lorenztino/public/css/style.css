@@ -127,10 +127,17 @@
         }
 
         .img-event {
-            background-image: url("../wedding/couple2.jpg");
-            background-size: cover;
+            background-size: 100% 100%;
             height: 400px;
             background-repeat: no-repeat;
+        }
+
+        .foto1{
+            background-image: url("../wedding/foto04.jpg");
+        }
+
+        .foto2{
+            background-image: url("../wedding/foto05.jpg");
         }
 
         #loc,
@@ -180,4 +187,20 @@
             }
             .quote1{font-size: 20pt;}
             .quote2{font-size: 35pt};
+
+            .form-regis{
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+
+            .img-event{
+                
+            }
+        }
+
+        @media all and (max-width: 575px){
+            .form-regis{
+                margin-left: 50px;
+                margin-right: 50px;
+            }
         }

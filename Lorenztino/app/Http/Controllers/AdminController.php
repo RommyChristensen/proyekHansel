@@ -16,6 +16,10 @@ class AdminController extends Controller
         return $tamu;
     }
 
+    public function toDashboard(){
+        return view('AdminLayout.adminDashboard', ['tamu' => $this->getTamu()]);
+    }
+
     public function login(Request $request){
         
         $username = $request['username'];

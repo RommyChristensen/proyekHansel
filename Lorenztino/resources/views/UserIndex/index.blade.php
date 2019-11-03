@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Index</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
@@ -53,21 +53,21 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="{{asset('wedding/MMZA (28).JPG')}}" alt="First slide">
+                <img class="d-block w-100" src="{{asset('wedding/foto02.jpg')}}" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <p class="caption-title">LORENZTINO & SONIA</p>
                     <p>I have found the one whom my soul loves</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="{{asset('wedding/MMZA (85).JPG')}}" alt="Second slide">
+                <img class="d-block w-100" src="{{asset('wedding/foto03.jpg')}}" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
                     <p class="caption-title">LORENZTINO & SONIA</p>
                     <p>I have found the one whom my soul loves</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="{{asset('wedding/MMZA (112).JPG')}}" alt="Third slide">
+                <img class="d-block w-100" src="{{asset('wedding/foto06.jpg')}}" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
                     <p class="caption-title">LORENZTINO & SONIA</p>
                     <p>I have found the one whom my soul loves</p>
@@ -83,10 +83,10 @@
                 <div id="carousel2" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="{{asset('wedding/MMZB (7).JPG')}}" alt="First slide">
+                            <img class="d-block w-100" src="{{asset('wedding/foto07.JPG')}}" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="{{asset('wedding/MMZB (253).JPG')}}" alt="Second slide">
+                            <img class="d-block w-100" src="{{asset('wedding/foto09.JPG')}}" alt="Second slide">
                         </div>
                     </div>
 
@@ -131,13 +131,13 @@
 
                 </p>
             </div>
-            <div class="col-md-6 text-center img-event">
+            <div class="col-md-6 text-center img-event foto1">
             </div>
         </div>
     </div>
     <div class="container-fluid" id="loc">
         <div class="row">
-            <div class="col-md-6 text-center img-event">
+            <div class="col-md-6 text-center img-event foto2">
             </div>
             <div style="font-family:'lato', sans-serif; padding-top: 7%;" class="col-md-6 text-center mb-5">
                 <h1>Wedding Reception</h1>
@@ -157,8 +157,8 @@
     <div class="row bg-white" id="reg">
         <div class="container pt-5 pb-5">
             <div class="row">
-                <div class="col-md-2 col-sm-2 col-xs-2"></div>
-                <div class="col-md-8 col-sm-8 col-xs-8 bg-white p-3 form-regis">
+                <div class="col-md-2 col-sm-2"></div>
+                <div class="col-md-8 col-sm-8 bg-white p-3 form-regis">
                     <h4 style="text-align: center;">We would love to have you on our wedding day <br> Please RSVP if you
                         are available to witness our special day</h4>
                     <nav>
@@ -292,7 +292,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-2 col-xs-2"></div>
+                <div class="col-md-2 col-sm-2"></div>
             </div>
         </div>
     </div>
