@@ -124,7 +124,7 @@
                 <br>
                 <p>
                     <strong>Saturday, February 1st 2020</strong> <br>
-                    <b> 11.30 am </b><br>
+                    <b> 11.00 am </b><br>
                     <strong>GBIS KRISTUS TERANG DUNIA </strong><br>
                     Jl. Embong Sawo 32, Surabaya
                     <br>

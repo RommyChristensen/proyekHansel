@@ -27,3 +27,4 @@ Route::post('/Burger123/deleteProses', 'AdminController@deleteProses');
 Route::post('/Burger123/editProses', 'AdminController@editProses');
 Route::post('/insert/user', 'Register@insert');
 Route::post('/Burger123/login', 'AdminController@login');
+Route::get('/verify/{token}','Register@Verifikasi')->name('verify');
