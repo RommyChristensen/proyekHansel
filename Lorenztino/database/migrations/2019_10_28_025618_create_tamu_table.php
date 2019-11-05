@@ -18,7 +18,7 @@ class CreateTamuTable extends Migration
             $table->string('nama',30);
             $table->string('email',50);
             $table->text('alamat');
-            $table->integer('telp');
+            $table->string('telp',16);
             $table->tinyInteger('kuota');
             $table->tinyInteger('kehadiran');
             $table->tinyInteger('verfikasi_Email',0)->default('0')->unsigned();

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 use App\Tamu;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\Surat;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -35,12 +37,28 @@ class Register extends Controller
             ->withInput();
         }
         if ($newGuests->save()) {
+            $tamu = $request->email;
+            $kode = hash("SHA512",($newGuests->id));
+            $verifikasi["nama"] = $request->nama;
+            $verifikasi["kode"] = $kode;
+            Mail::to($tamu)->send(new Surat ("Mail.Konfirmasi",$verifikasi,"Verifikasi Email"));
             return view('UserIndex.successRegistration');
         }
         else{
-            return view('failed');
         }
         
+    }
+
+    public function Verifikasi(Request $request,$token){
+        $newGuests = Tamu::where(DB::raw("SHA2(id, 512)"),"=",$token)
+        ->first();
+        $newGuests->verfikasi_Email = 1; 
+        if ($newGuests->save()) {
+            return view("UserIndex.successVerfication");
+        }
+        else {
+            
+        }
     }
 
 }
