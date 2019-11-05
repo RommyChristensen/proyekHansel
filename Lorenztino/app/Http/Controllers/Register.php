@@ -45,7 +45,6 @@ class Register extends Controller
             return view('UserIndex.successRegistration');
         }
         else{
-            return view('failed');
         }
         
     }

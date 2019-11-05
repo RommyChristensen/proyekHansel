@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Index</title>
+    <title>LaurenSonia</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
@@ -83,10 +83,10 @@
                 <div id="carousel2" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="{{asset('wedding/foto07.JPG')}}" alt="First slide">
+                            <img class="d-block w-100" src="{{asset('wedding/foto07.jpg')}}" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="{{asset('wedding/foto09.JPG')}}" alt="Second slide">
+                            <img class="d-block w-100" src="{{asset('wedding/foto09.jpg')}}" alt="Second slide">
                         </div>
                     </div>
 
@@ -177,31 +177,28 @@
                                 @csrf
                                 <div class="form-group">
                                     <label>Full Name</label>
-                                    <input type="text" name="nama" placeholder="John Doe" class="form-control" />
+                                    <input type="text" name="nama" class="form-control" />
                                     @if ($errors->has('nama'))
                                         <span style="color:red">{{$errors->first('nama')}}</span>
                                     @endif
                                 </div>
                                 <div class="form-group">
                                     <label>Address</label>
-                                    <input type="text" name="alamat" placeholder="Ngagel Jaya Tengah 74 - 77"
-                                        class="form-control" />
+                                    <input type="text" name="alamat" class="form-control" />
                                     @if ($errors->has('alamat'))
                                         <span style="color:red">{{$errors->first('alamat')}}</span>
                                     @endif
                                 </div>
                                 <div class="form-group">
                                     <label>Phone Number</label>
-                                    <input type="number" name="telp" placeholder="+6287884914473"
-                                        class="form-control" />
+                                    <input type="number" name="telp" class="form-control" />
                                     @if ($errors->has('telp'))
                                     <span style="color:red">{{$errors->first('telp')}}</span>
                                     @endif
                                 </div>
                                 <div class="form-group">
                                     <label>Email</label>
-                                    <input type="email" name="email" placeholder="johndoe@gmail.com"
-                                        class="form-control" />
+                                    <input type="email" name="email" class="form-control" />
                                     @if ($errors->has('email'))
                                     <span style="color:red">{{$errors->first('email')}}</span>
                                     @endif
@@ -237,31 +234,28 @@
                                 @csrf
                                 <div class="form-group">
                                     <label>Nama Lengkap</label>
-                                    <input type="text" name="nama" placeholder="John Doe" class="form-control" />
+                                    <input type="text" name="nama" class="form-control" />
                                     @if ($errors->has('name'))
                                     <span class="help-block" style="color:red">{{$errors->first('nama')}}</span>
                                     @endif
                                 </div>
                                 <div class="form-group">
                                     <label>Alamat</label>
-                                    <input type="text" name="alamat" placeholder="Ngagel Jaya Tengah 74 - 77"
-                                        class="form-control" />
+                                    <input type="text" name="alamat" class="form-control" />
                                     @if ($errors->has('name'))
                                     <span class="help-block" style="color:red">{{$errors->first('alamat')}}</span>
                                     @endif
                                 </div>
                                 <div class="form-group">
                                     <label>No Telp</label>
-                                    <input type="number" name="telp" placeholder="+6287884914473"
-                                        class="form-control" />
+                                    <input type="number" name="telp" class="form-control" />
                                     @if ($errors->has('name'))
                                     <span class="help-block" style="color:red">{{$errors->first('telp')}}</span>
                                     @endif
                                 </div>
                                 <div class="form-group">
                                     <label>Email</label>
-                                    <input type="email" name="email" placeholder="johndoe@gmail.com"
-                                        class="form-control" />
+                                    <input type="email" name="email" class="form-control" />
                                     @if ($errors->has('name'))
                                     <span class="help-block" style="color:red">{{$errors->first('email')}}</span>
                                     @endif
