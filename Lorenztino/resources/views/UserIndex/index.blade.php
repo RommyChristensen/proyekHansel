@@ -320,7 +320,7 @@
                     <span class="fa fa-user"></span> Lorenztino & Sonia
                 </div>
                 <div class="col-md-6">
-                    <span class="fa fa-envelope"></span> soinlorve@outlook.com
+                    <span class="fa fa-envelope"></span> soinlorve@gmail.com
                 </div>
             </div>
             <!-- <div class="row">
