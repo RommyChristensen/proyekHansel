@@ -85,10 +85,10 @@
                 <div id="carousel2" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item not-overlay active">
-                            <img class="d-block w-100" src="{{asset('wedding/foto07.JPG')}}" alt="First slide">
+                            <img class="d-block w-100" src="{{asset('wedding/foto07.jpg')}}" alt="First slide">
                         </div>
                         <div class="carousel-item not-overlay">
-                            <img class="d-block w-100" src="{{asset('wedding/foto09.JPG')}}" alt="Second slide">
+                            <img class="d-block w-100" src="{{asset('wedding/foto09.jpg')}}" alt="Second slide">
                         </div>
                     </div>
 
