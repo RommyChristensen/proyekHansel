@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lorenztino & Sonia Wedding</title>
+<<<<<<< HEAD
+    <title>Index</title>
+=======
+    <title>Lorenztino & Sonia</title>
+>>>>>>> f67ae8e00582d091feba6a03b10c929c8f0f449f
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
@@ -67,7 +71,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="{{asset('wedding/foto06.jpg')}}" alt="Third slide">
+                <img class="d-block w-100" src="{{asset('wedding/foto09.jpg')}}" alt="Third slide">
                 <div class="carousel-caption">
                     <p class="caption-title">LORENZTINO & SONIA</p>
                     <p class="caption-title2">I have found the one whom my soul loves</p>
@@ -82,11 +86,11 @@
             <div class="col-md-6" style="padding: 0;">
                 <div id="carousel2" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="{{asset('wedding/foto07.jpg')}}" alt="First slide">
+                        <div class="carousel-item not-overlay active">
+                            <img class="d-block w-100" src="{{asset('wedding/foto07.JPG')}}" alt="First slide">
                         </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="{{asset('wedding/foto09.jpg')}}" alt="Second slide">
+                        <div class="carousel-item not-overlay">
+                            <img class="d-block w-100" src="{{asset('wedding/foto09.JPG')}}" alt="Second slide">
                         </div>
                     </div>
 
@@ -105,8 +109,7 @@
                     <td>
                         <div class="container">
 
-                            <p class="quote1">Every love story is beautiful, but ours is my favorite</p>
-                            <h1 class="quote2">#SOinLORve</h1>
+                            <p class="quote1">Every love story is beautiful, but ours is my favorite<br>#SOinLORve</p>  
                         </div>
                         <!-- <p style="font-size: 15pt">
                             #SOinLORve
@@ -119,23 +122,37 @@
     <!-- Event Detail -->
     <div class="container-fluid" id="loc">
         <div class="row">
-            <div style="font-family: 'DM Serif Text', serif; padding-top: 7%;" class="col-md-6 text-center mb-5">
-                <h1>Holy Matrimony</h1>
-                <br>
-                <p>
-                    <strong>Saturday, February 1st 2020</strong> <br>
-                    <b> 11.00 am </b><br>
-                    <strong>GBIS KRISTUS TERANG DUNIA </strong><br>
-                    Jl. Embong Sawo 32, Surabaya
+            <div style="font-family: 'DM Serif Text', serif; padding-top: 7%;" class="col-md-6 con-parent text-center mb-5">
+                <div class="con">
+                    <h1>Holy Matrimony</h1>
                     <br>
+                    <p>
+                        <strong>Saturday, February 1st 2020</strong> <br>
+                        <b> 11.30 am </b><br>
+                        <strong>GBIS KRISTUS TERANG DUNIA </strong><br>
+                        Jl. Embong Sawo 32, Surabaya
+                        <br>
 
-                </p>
+                    </p>
+                </div>
+                <div class="con">
+                    <h1>Wedding Reception</h1>
+                    <br>
+                    <p>
+                        <strong>Saturday, February 1st 2020</strong> <br>
+                        <b> 06.00 pm </b> <br>
+                        <strong>Ballroom JW Marriott Hotel </strong><br>
+                        Jl. Embong Malang 85-89, Surabaya
+                        <br>
+
+                    </p>
+                </div>
             </div>
             <div class="col-md-6 text-center img-event foto1">
             </div>
         </div>
     </div>
-    <div class="container-fluid" id="loc">
+    {{-- <div class="container-fluid" id="loc">
         <div class="row">
             <div class="col-md-6 text-center img-event foto2">
             </div>
@@ -152,7 +169,7 @@
                 </p>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- REGIS FORM -->
     <div class="row bg-white" id="reg">
         <div class="container pt-5 pb-5">
@@ -177,28 +194,31 @@
                                 @csrf
                                 <div class="form-group">
                                     <label>Full Name</label>
-                                    <input type="text" name="nama" class="form-control" />
+                                    <input type="text" name="nama" placeholder="John Doe" class="form-control" />
                                     @if ($errors->has('nama'))
                                         <span style="color:red">{{$errors->first('nama')}}</span>
                                     @endif
                                 </div>
                                 <div class="form-group">
                                     <label>Address</label>
-                                    <input type="text" name="alamat" class="form-control" />
+                                    <input type="text" name="alamat" placeholder="Ngagel Jaya Tengah 74 - 77"
+                                        class="form-control" />
                                     @if ($errors->has('alamat'))
                                         <span style="color:red">{{$errors->first('alamat')}}</span>
                                     @endif
                                 </div>
                                 <div class="form-group">
                                     <label>Phone Number</label>
-                                    <input type="number" name="telp" class="form-control" />
+                                    <input type="number" name="telp" placeholder="+6287884914473"
+                                        class="form-control" />
                                     @if ($errors->has('telp'))
                                     <span style="color:red">{{$errors->first('telp')}}</span>
                                     @endif
                                 </div>
                                 <div class="form-group">
                                     <label>Email</label>
-                                    <input type="email" name="email" class="form-control" />
+                                    <input type="email" name="email" placeholder="johndoe@gmail.com"
+                                        class="form-control" />
                                     @if ($errors->has('email'))
                                     <span style="color:red">{{$errors->first('email')}}</span>
                                     @endif
@@ -234,28 +254,31 @@
                                 @csrf
                                 <div class="form-group">
                                     <label>Nama Lengkap</label>
-                                    <input type="text" name="nama" class="form-control" />
+                                    <input type="text" name="nama" placeholder="John Doe" class="form-control" />
                                     @if ($errors->has('name'))
                                     <span class="help-block" style="color:red">{{$errors->first('nama')}}</span>
                                     @endif
                                 </div>
                                 <div class="form-group">
                                     <label>Alamat</label>
-                                    <input type="text" name="alamat" class="form-control" />
+                                    <input type="text" name="alamat" placeholder="Ngagel Jaya Tengah 74 - 77"
+                                        class="form-control" />
                                     @if ($errors->has('name'))
                                     <span class="help-block" style="color:red">{{$errors->first('alamat')}}</span>
                                     @endif
                                 </div>
                                 <div class="form-group">
                                     <label>No Telp</label>
-                                    <input type="number" name="telp" class="form-control" />
+                                    <input type="number" name="telp" placeholder="+6287884914473"
+                                        class="form-control" />
                                     @if ($errors->has('name'))
                                     <span class="help-block" style="color:red">{{$errors->first('telp')}}</span>
                                     @endif
                                 </div>
                                 <div class="form-group">
                                     <label>Email</label>
-                                    <input type="email" name="email" class="form-control" />
+                                    <input type="email" name="email" placeholder="johndoe@gmail.com"
+                                        class="form-control" />
                                     @if ($errors->has('name'))
                                     <span class="help-block" style="color:red">{{$errors->first('email')}}</span>
                                     @endif

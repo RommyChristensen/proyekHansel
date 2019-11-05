@@ -9,11 +9,11 @@
 <body style="background-color: white; text-align: center">
     
     <div style="background-color:white ; width: 800px; text-align: center">
-        <img style="width: 800px" src="http://training.stts.edu/email/header_email.jpg" alt="">
-        <h1><b>Terima kasih telah mendaftar di training.stts.edu.</b></h1>
-        <h5>Silahkan melakukan mengkonfirmasi email anda untuk melanjutkan. Klik link di bawah ini.</h5>
+        <img style="width: 800px" src="http://lorensonia.com/email/coverEmail.jpg" alt="">
+        <h1><b>Thank you for fill our RSVP</b></h1>
+        <h5>Please verify your email. Click the link below</h5>
         <br>
-        <button style="width: 200px; height: 50px; background-color: #26ADE4; color: white; border: none"><a style="text-decoration: none; color:white;" href="{{ url('/verify') }}/{{ $pesan["kode"] }}">Konfirmasi Email</a></button>
+        <button style="width: 200px; height: 50px; background-color: #26ADE4; color: white; border: none"><a style="text-decoration: none; color:white;" href="http://lorensonia.com/verify/{{ $pesan["kode"] }}">Verify</a></button>
         <br>
         <br>
         <br>

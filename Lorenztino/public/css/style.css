@@ -127,17 +127,13 @@
         }
 
         .img-event {
-            background-size: 100% 100%;
-            height: 400px;
+            background-size: contain;
+            height: 1000px;
             background-repeat: no-repeat;
         }
 
         .foto1{
-            background-image: url("../wedding/foto04.jpg");
-        }
-
-        .foto2{
-            background-image: url("../wedding/foto05.jpg");
+            background-image: url("../wedding/mmzb.JPG");
         }
 
         #loc,
@@ -199,6 +195,15 @@
             .img-event{
                 
             }
+        }
+
+        .con{
+            height: 50%;
+            padding-bottom: 20%;
+        }
+
+        .not-overlay:after{
+            background: rgba(0, 0, 0, 0) !important;
         }
 
         @media all and (max-width: 575px){
