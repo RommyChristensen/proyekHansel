@@ -61,7 +61,7 @@
             <a href="{{url('/Burger123/verifiedAttendance')}}" class="detailed">
               <span class="title">Verified Attendance</span>
             </a>
-            <span class="icon-thumbnail">V</span>
+            <span class="icon-thumbnail">A</span>
           </li>
         </ul>
         <div class="clearfix"></div>
@@ -159,16 +159,13 @@
             <div class="panel panel-default">
               <div class="panel-heading">
                 <div class="panel-title">
-                  <h3>Data User</h3>
-                  </div>
-                  <div class="pull-right">
-                      <a href="{{url('/Burger123/insertAttendance')}}" class="btn btn-success">Add Row</a>
+                  <h3>Verify Attendance</h3>
                   </div>
                   </div>
                   <div class="panel-body">
                       <form role="form" method="post">
                           @csrf
-                          <table id="myDataTable" class="table">
+                          <table id="myDataTable" class="table table-hover">
                               <thead>
                                   <tr>
                                       <th>Nama</th>
@@ -182,13 +179,7 @@
                               </thead>
                               <tbody>
                                   @foreach ($tamu as $item)
-                                    @if($item->verfikasi_Email == 0)
-                                      <tr class='warning'>
-                                    @elseif($item->verfikasi_Email == 1)
-                                      <tr class='danger'>
-                                    @elseif($item->verfikasi_Email == 2)
-                                      <tr class='success'>
-                                    @endif
+                                  <tr>
                                       <td>{{$item->nama}}</td>
                                       <td>{{$item->email}}</td>
                                       <td>{{$item->alamat}}</td>
@@ -196,10 +187,10 @@
                                       <td>{{$item->kehadiran}}</td>
                                       <td>{{$item->kuota}}</td>
                                       <td>
-                                          <button type="submit" formaction="{{url('/Burger123/editAttendance')}}" name="btnEdit" value="{{$item->id}}" class="btn btn-info"><i
-                                                  class="fa fa-edit"></i></button>
-                                          <button type="submit" formaction="{{url('/Burger123/deleteProses')}}" name="btnDelete" value="{{$item->id}}"
-                                              class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                                          <button type="submit" formaction="{{url('/Burger123/acceptVerified')}}" name="btnEdit" value="{{$item->id}}" class="btn btn-success"><i
+                                                  class="fa fa-check"></i></button>
+                                          <button type="submit" formaction="{{url('/Burger123/rejectVerified')}}" name="btnDelete" value="{{$item->id}}"
+                                              class="btn btn-danger"><i class="fa fa-times"></i></button>
                                       </td>
                                   </tr>
                                   @endforeach
@@ -217,22 +208,6 @@
                               </tfoot>
                           </table>
                       </form>
-                  </div>
-                  <div class="panel-footer">
-                    <table>
-                        <tr>
-                            <td class="bg-success" width="20px;">&nbsp;</td>
-                            <td>&nbsp;Verified By Admin</td>
-                        </tr>
-                        <tr>
-                            <td class="bg-warning" width="20px;">&nbsp;</td>
-                            <td>&nbsp;Not Verified By Admin</td>
-                        </tr>
-                        <tr>
-                            <td class="bg-danger" width="20px;">&nbsp;</td>
-                            <td>&nbsp;Rejected By Admin</td>
-                        </tr>
-                    </table>
                   </div>
             </div>
             <!-- END PLACE PAGE CONTENT HERE -->
@@ -275,7 +250,7 @@
     <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script> --}}
     <script>
         $(document).ready(function() {
-            $('#myDataTable').DataTable();
+             $('#myDataTable').DataTable();
 
         });
     </script>

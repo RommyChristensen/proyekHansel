@@ -20,7 +20,10 @@ Route::get('/Burger123', function () {
 Route::get('/Burger123/dashboard', 'AdminController@toDashboard');
 
 Route::get('/Burger123/insertAttendance', 'AdminController@addAttendance');
+Route::get('/Burger123/verifiedAttendance', 'AdminController@verifiedAttendance');
 
+Route::post('/Burger123/acceptVerified', 'AdminController@acceptVerified');
+Route::post('/Burger123/rejectVerified', 'AdminController@rejectVerified');
 Route::post('/Burger123/editAttendance', 'AdminController@editAttendance');
 Route::post('/Burger123/addProses', 'AdminController@addProses');
 Route::post('/Burger123/deleteProses', 'AdminController@deleteProses');

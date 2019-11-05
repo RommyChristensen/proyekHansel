@@ -12,7 +12,7 @@ class AdminController extends Controller
 {
     //
     public function getTamu(){
-        $tamu = DB::table('tamu')->get();
+        $tamu = DB::table('tamu')->orderByRaw('verfikasi_Email DESC')->get();
         return $tamu;
     }
 
@@ -45,10 +45,37 @@ class AdminController extends Controller
         return view('AdminLayout.addAttendance');
     }
 
+    public function verifiedAttendance(){
+        $verified = DB::table('tamu')->where('verfikasi_Email', 0)->get();
+        return view('AdminLayout.verifiedAttendance', ['tamu' => $verified]);
+    }
+
     public function editAttendance(Request $request){
         $id = $request['btnEdit'];
         $edit = DB::table('tamu')->where('id', $id)->get()->toArray();
         return view('AdminLayout.editAttendance', ['edited' => $edit]);
+    }
+
+    public function acceptVerified(Request $request){
+        $id = $request->btnEdit;
+        $res = DB::table('tamu')
+            ->where('id', $id)
+            ->update([
+                'verfikasi_Email' => 2
+            ]);
+        $verified = DB::table('tamu')->where('verfikasi_Email', 0)->get();
+        return view('AdminLayout.verifiedAttendance', ['tamu' => $verified]);
+    }
+    
+    public function rejectVerified(Request $request){
+        $id = $request->btnDelete;
+        $res = DB::table('tamu')
+            ->where('id', $id)
+            ->update([
+                'verfikasi_Email' => 1
+            ]);
+        $verified = DB::table('tamu')->where('verfikasi_Email', 0)->get();
+        return view('AdminLayout.verifiedAttendance', ['tamu' => $verified]);
     }
 
     public function addProses(Request $request){

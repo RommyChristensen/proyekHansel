@@ -342,3 +342,5 @@
 </body>
 
 </html>
+
+{{-- php artisan make: migration create_ --}}
