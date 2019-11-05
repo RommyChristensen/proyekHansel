@@ -102,18 +102,11 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-6 bg-dark text-white" style="padding: 20px 20px 20px 20px;">
-                <table style="height: 100%;">
-                    <td>
-                        <div class="container">
+            <div class="col-md-6 bg-dark text-white container" style="padding: 80px 20px 20px 20px;">
+                <div class="container" style="text-align: center">
 
-                            <p class="quote1">Every love story is beautiful, but ours is my favorite<br>#SOinLORve</p>  
-                        </div>
-                        <!-- <p style="font-size: 15pt">
-                            #SOinLORve
-                        </p> -->
-                    </td>
-                </table>
+                    <p class="quote1">Every love story is beautiful, but ours is my favorite<br>#SOinLORve</p>  
+                </div>
             </div>
         </div>
     </div>

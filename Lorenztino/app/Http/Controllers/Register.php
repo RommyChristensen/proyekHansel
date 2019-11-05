@@ -51,8 +51,10 @@ class Register extends Controller
     }
 
     public function Verifikasi(Request $request,$token){
+        var_dump($token);
         $newGuests = Tamu::where(DB::raw("SHA2(id, 512)"),"=",$token)
         ->first();
+        var_dump($newGuests);
         $newGuests->verfikasi_Email = 1; 
         if ($newGuests->save()) {
             return view("UserIndex.successVerfication");
