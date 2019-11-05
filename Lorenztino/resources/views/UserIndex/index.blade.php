@@ -67,7 +67,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="{{asset('wedding/foto06.jpg')}}" alt="Third slide">
+                <img class="d-block w-100" src="{{asset('wedding/foto09.jpg')}}" alt="Third slide">
                 <div class="carousel-caption">
                     <p class="caption-title">LORENZTINO & SONIA</p>
                     <p class="caption-title2">I have found the one whom my soul loves</p>
@@ -105,8 +105,7 @@
                     <td>
                         <div class="container">
 
-                            <p class="quote1">Every love story is beautiful, but ours is my favorite</p>
-                            <h1 class="quote2">#SOinLORve</h1>
+                            <p class="quote1">Every love story is beautiful, but ours is my favorite<br>#SOinLORve</p>  
                         </div>
                         <!-- <p style="font-size: 15pt">
                             #SOinLORve

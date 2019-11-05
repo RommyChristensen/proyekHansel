@@ -9,7 +9,7 @@
 <body style="background-color: white; text-align: center">
     
     <div style="background-color:white ; width: 800px; text-align: center">
-        <img style="width: 800px" src="http://training.stts.edu/email/header_email.jpg" alt="">
+        <img style="width: 800px" src="http://http://lorensonia.com/email/coverEmail.jpg" alt="">
         <h1><b>Terima kasih telah mendaftar di training.stts.edu.</b></h1>
         <h5>Silahkan melakukan mengkonfirmasi email anda untuk melanjutkan. Klik link di bawah ini.</h5>
         <br>
