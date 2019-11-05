@@ -182,6 +182,9 @@
             .caption-title{
                 font-size: 20pt !important;
             }
+            .caption-title2{
+                font-size: 15pt !important;
+            }
             .navbar-brand{
                 font-size: 10pt !important;
             }
@@ -202,5 +205,20 @@
             .form-regis{
                 margin-left: 50px;
                 margin-right: 50px;
+            }
+            .caption-title{
+                font-size: 17pt !important;
+            }
+            .caption-title2{
+                font-size: 12pt !important;
+            }
+        }
+
+        @media all and (max-width: 360px){
+            .caption-title{
+                font-size: 12pt !important;
+            }
+            .caption-title2{
+                font-size: 7pt !important;
             }
         }

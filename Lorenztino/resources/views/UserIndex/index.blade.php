@@ -54,23 +54,23 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="{{asset('wedding/foto02.jpg')}}" alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <p class="caption-title">LORENZTINO & SONIA</p>
-                    <p>I have found the one whom my soul loves</p>
+                    <p class="caption-title2">I have found the one whom my soul loves</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="{{asset('wedding/foto03.jpg')}}" alt="Second slide">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <p class="caption-title">LORENZTINO & SONIA</p>
-                    <p>I have found the one whom my soul loves</p>
+                    <p class="caption-title2">I have found the one whom my soul loves</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="{{asset('wedding/foto06.jpg')}}" alt="Third slide">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <p class="caption-title">LORENZTINO & SONIA</p>
-                    <p>I have found the one whom my soul loves</p>
+                    <p class="caption-title2">I have found the one whom my soul loves</p>
                 </div>
             </div>
         </div>
