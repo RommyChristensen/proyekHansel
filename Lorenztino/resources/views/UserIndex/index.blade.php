@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Index</title>
-    <title>Lorenztino & Sonia</title>
     <title>Lorenztino & Sonia</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -85,10 +83,19 @@
                 <div id="carousel2" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item not-overlay active">
-                            <img class="d-block w-100" src="{{asset('wedding/foto07.jpg')}}" alt="First slide">
+                            <img class="d-block w-100" src="{{asset('wedding/foto06.jpg')}}" alt="First slide">
                         </div>
                         <div class="carousel-item not-overlay">
-                            <img class="d-block w-100" src="{{asset('wedding/foto09.jpg')}}" alt="Second slide">
+                            <img class="d-block w-100" src="{{asset('wedding/foto07.jpg')}}">
+                        </div>
+                        <div class="carousel-item not-overlay">
+                            <img class="d-block w-100" src="{{asset('wedding/foto10.jpg')}}">
+                        </div>
+                        <div class="carousel-item not-overlay">
+                            <img class="d-block w-100" src="{{asset('wedding/foto11.jpg')}}">
+                        </div>
+                        <div class="carousel-item not-overlay">
+                            <img class="d-block w-100" src="{{asset('wedding/foto12.jpg')}}">
                         </div>
                     </div>
 
@@ -102,26 +109,18 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-6 bg-dark text-white" style="padding: 20px 20px 20px 20px;">
-                <div class="container" style="text-align: center">
-
-                    <p class="quote1">Every love story is beautiful, but ours is my favorite<br>#SOinLORve</p>  
+            <div class="col-md-6 bg-dark text-white" style="display:flex; align-items: center">
+                <div class="container-fluid align-middle" style="top: 50%">
+                    <h4>Every love story is beautiful, but ours is my favorite #SOinLORve</h4>
                 </div>
-                {{-- <table style="height: 100%;">
-                    <td>
-                        
-                        <!-- <p style="font-size: 15pt">
-                            #SOinLORve
-                        </p> -->
-                    </td>
-                </table> --}}
             </div>
         </div>
     </div>
     <!-- Event Detail -->
     <div class="container-fluid" id="loc">
         <div class="row">
-            <div style="font-family: 'DM Serif Text', serif; padding-top: 7%;" class="col-md-6 con-parent text-center mb-5">
+            <div style="font-family: 'DM Serif Text', serif; padding-top: 7%;"
+                class="col-md-6 con-parent text-center mb-5">
                 <div class="con">
                     <h1>Holy Matrimony</h1>
                     <br>
@@ -147,7 +146,34 @@
                     </p>
                 </div>
             </div>
-            <div class="col-md-6 text-center img-event foto1">
+            <div class="col-md-6">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item not-overlay active">
+                            <img class="d-block w-100" src="{{asset('wedding/po01.JPG')}}" alt="First slide">
+                        </div>
+                        <div class="carousel-item not-overlay">
+                            <img class="d-block w-100" src="{{asset('wedding/po02.JPG')}}" alt="Second slide">
+                        </div>
+                        <div class="carousel-item not-overlay">
+                            <img class="d-block w-100" src="{{asset('wedding/po03.JPG')}}" alt="Third slide">
+                        </div>
+                        <div class="carousel-item not-overlay">
+                            <img class="d-block w-100" src="{{asset('wedding/po04.JPG')}}" alt="Third slide">
+                        </div>
+                        <div class="carousel-item not-overlay">
+                            <img class="d-block w-100" src="{{asset('wedding/po05.JPG')}}" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -195,7 +221,7 @@
                                     <label>Full Name</label>
                                     <input type="text" name="nama" placeholder="John Doe" class="form-control" />
                                     @if ($errors->has('nama'))
-                                        <span style="color:red">{{$errors->first('nama')}}</span>
+                                    <span style="color:red">{{$errors->first('nama')}}</span>
                                     @endif
                                 </div>
                                 <div class="form-group">
@@ -203,7 +229,7 @@
                                     <input type="text" name="alamat" placeholder="Ngagel Jaya Tengah 74 - 77"
                                         class="form-control" />
                                     @if ($errors->has('alamat'))
-                                        <span style="color:red">{{$errors->first('alamat')}}</span>
+                                    <span style="color:red">{{$errors->first('alamat')}}</span>
                                     @endif
                                 </div>
                                 <div class="form-group">
@@ -313,7 +339,7 @@
         </div>
     </div>
 
-    <div class="row p-5 footer" style="background-color: black; color: white;">
+    <div class="row p-4 footer" style="background-color: black; color: white;">
         <div class="container-fluid text-center">
             <h3>Contact Us</h3>
             <div class="row">
