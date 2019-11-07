@@ -159,7 +159,7 @@
             <div class="panel panel-default">
               <div class="panel-heading">
                 <div class="panel-title">
-                  <h3>Verify Attendance</h3>
+                  <h3>Pending Attendance</h3>
                   </div>
                   </div>
                   <div class="panel-body">
@@ -210,6 +210,52 @@
                       </form>
                   </div>
             </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="panel-title">
+                  <h3>Rejected Attendance</h3>
+                  </div>
+                  </div>
+                  <div class="panel-body">
+                      <form role="form" method="post">
+                          @csrf
+                          <table id="myDataTable2" class="table table-hover">
+                              <thead>
+                                  <tr>
+                                      <th>Nama</th>
+                                      <th>Email</th>
+                                      <th>Alamat</th>
+                                      <th>Telp</th>
+                                      <th>Kehadiran</th>
+                                      <th>Kuota</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  @foreach ($reject as $item)
+                                  <tr>
+                                      <td>{{$item->nama}}</td>
+                                      <td>{{$item->email}}</td>
+                                      <td>{{$item->alamat}}</td>
+                                      <td>{{$item->telp}}</td>
+                                      <td>{{$item->kehadiran}}</td>
+                                      <td>{{$item->kuota}}</td>
+                                  </tr>
+                                  @endforeach
+                              </tbody>
+                              <tfoot>
+                                  <tr>
+                                      <th>Nama</th>
+                                      <th>Email</th>
+                                      <th>Alamat</th>
+                                      <th>Telp</th>
+                                      <th>Kehadiran</th>
+                                      <th>Kuota</th>
+                                  </tr>
+                              </tfoot>
+                          </table>
+                      </form>
+                  </div>
+            </div>
             <!-- END PLACE PAGE CONTENT HERE -->
           </div>
           <!-- END CONTAINER FLUID -->
@@ -251,6 +297,7 @@
     <script>
         $(document).ready(function() {
              $('#myDataTable').DataTable();
+             $('#myDataTable2').DataTable();
 
         });
     </script>

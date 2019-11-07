@@ -182,11 +182,11 @@
                               </thead>
                               <tbody>
                                   @foreach ($tamu as $item)
-                                    @if($item->verfikasi_Email == 0)
+                                    @if($item->verfikasi_Admin == 0)
                                       <tr class='warning'>
-                                    @elseif($item->verfikasi_Email == 1)
+                                    @elseif($item->verfikasi_Admin == 1)
                                       <tr class='danger'>
-                                    @elseif($item->verfikasi_Email == 2)
+                                    @elseif($item->verfikasi_Admin == 2)
                                       <tr class='success'>
                                     @endif
                                       <td>{{$item->nama}}</td>
