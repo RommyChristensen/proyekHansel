@@ -12,7 +12,7 @@ class AdminController extends Controller
 {
     //
     public function getTamu(){
-        $tamu = DB::table('tamu')->orderByRaw('verfikasi_Email DESC')->get();
+        $tamu = DB::table('tamu')->orderByRaw('verfikasi_Admin DESC')->get();
         return $tamu;
     }
 
@@ -46,8 +46,9 @@ class AdminController extends Controller
     }
 
     public function verifiedAttendance(){
-        $verified = DB::table('tamu')->where('verfikasi_Email', 0)->get();
-        return view('AdminLayout.verifiedAttendance', ['tamu' => $verified]);
+        $verified = DB::table('tamu')->where('verfikasi_Admin', 0)->get();
+        $rejected = DB::table('tamu')->where('verfikasi_Admin', 1)->get();
+        return view('AdminLayout.verifiedAttendance', ['tamu' => $verified, 'reject' => $rejected]);
     }
 
     public function editAttendance(Request $request){
@@ -61,10 +62,11 @@ class AdminController extends Controller
         $res = DB::table('tamu')
             ->where('id', $id)
             ->update([
-                'verfikasi_Email' => 2
+                'verfikasi_Admin' => 2
             ]);
-        $verified = DB::table('tamu')->where('verfikasi_Email', 0)->get();
-        return view('AdminLayout.verifiedAttendance', ['tamu' => $verified]);
+        $verified = DB::table('tamu')->where('verfikasi_Admin', 0)->get();
+        $rejected = DB::table('tamu')->where('verfikasi_Admin', 1)->get();
+        return view('AdminLayout.verifiedAttendance', ['tamu' => $verified, 'reject' => $rejected]);
     }
     
     public function rejectVerified(Request $request){
@@ -72,10 +74,11 @@ class AdminController extends Controller
         $res = DB::table('tamu')
             ->where('id', $id)
             ->update([
-                'verfikasi_Email' => 1
+                'verfikasi_Admin' => 1
             ]);
-        $verified = DB::table('tamu')->where('verfikasi_Email', 0)->get();
-        return view('AdminLayout.verifiedAttendance', ['tamu' => $verified]);
+        $verified = DB::table('tamu')->where('verfikasi_Admin', 0)->get();
+        $rejected = DB::table('tamu')->where('verfikasi_Admin', 1)->get();
+        return view('AdminLayout.verifiedAttendance', ['tamu' => $verified, 'reject' => $rejected]);
     }
 
     public function addProses(Request $request){
