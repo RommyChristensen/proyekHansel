@@ -97,57 +97,136 @@
             <div class="col-md-7">
                 <form action="{{url('/insert/user')}}" method="post" role="form" class="rsvp-form ftco-animate">
                     @csrf
-                    <div class="form-group">
-                        <label>Full Name</label>
-                        <input type="text" name="nama" placeholder="John Doe" class="form-control" />
-                        @if ($errors->has('nama'))
-                        <span style="color:red">{{$errors->first('nama')}}</span>
-                        @endif
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                                role="tab" aria-controls="nav-home" aria-selected="true">English</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                                role="tab" aria-controls="nav-profile" aria-selected="false">Bahasa Indonesia</a>
+                        </div>
+                    </nav>
+                    <!-- Form Inggris -->
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active pt-3" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <form action="{{url('/insert/user')}}" method="post" role="form" class="w-100">
+                                @csrf
+                                <div class="form-group">
+                                    <label>Full Name</label>
+                                    <input type="text" name="nama" placeholder="John Doe" class="form-control" />
+                                    @if ($errors->has('nama'))
+                                    <span style="color:red">{{$errors->first('nama')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group">
+                                    <label>Address</label>
+                                    <input type="text" name="alamat" placeholder="Ngagel Jaya Tengah 74 - 77"
+                                        class="form-control" />
+                                    @if ($errors->has('alamat'))
+                                    <span style="color:red">{{$errors->first('alamat')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group">
+                                    <label>Phone Number</label>
+                                    <input type="number" name="telp" placeholder="+6287884914473"
+                                        class="form-control" />
+                                    @if ($errors->has('telp'))
+                                    <span style="color:red">{{$errors->first('telp')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" name="email" placeholder="johndoe@gmail.com"
+                                        class="form-control" />
+                                    @if ($errors->has('email'))
+                                    <span style="color:red">{{$errors->first('email')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group">
+                                    <label>Select your Attendance</label>
+                                    <select name="kehadiran" class="form-control">
+                                        <option value="1">Holy Matrimony</option>
+                                        <option value="2">Wedding Dinner</option>
+                                        <option value="3">Both</option>
+                                    </select>
+                                    @if ($errors->has('kehadiran'))
+                                    <span style="color:red">{{$errors->first('kehadiran')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group">
+                                    <label>Number of People</label>
+                                    <select name="kuota" class="form-control">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                    @if ($errors->has('kuota'))
+                                    <span style="color:red">{{$errors->first('kuota')}}</span>
+                                    @endif
+                                </div>
+                                <button type="submit" value="submit" class="btn btn-dark btn-block">Submit</button>
+                            </form>
+                        </div>
+                        <!-- Form Bahasa -->
+                        <div class="tab-pane fade pt-3" id="nav-profile" role="tabpanel"
+                            aria-labelledby="nav-profile-tab">
+                            <form action="{{url('/insert/user')}}" method="post" role="form" class="w-100">
+                                @csrf
+                                <div class="form-group">
+                                    <label>Nama Lengkap</label>
+                                    <input type="text" name="nama" placeholder="John Doe" class="form-control" />
+                                    @if ($errors->has('name'))
+                                    <span class="help-block" style="color:red">{{$errors->first('nama')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group">
+                                    <label>Alamat</label>
+                                    <input type="text" name="alamat" placeholder="Ngagel Jaya Tengah 74 - 77"
+                                        class="form-control" />
+                                    @if ($errors->has('name'))
+                                    <span class="help-block" style="color:red">{{$errors->first('alamat')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group">
+                                    <label>No Telp</label>
+                                    <input type="number" name="telp" placeholder="+6287884914473"
+                                        class="form-control" />
+                                    @if ($errors->has('name'))
+                                    <span class="help-block" style="color:red">{{$errors->first('telp')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" name="email" placeholder="johndoe@gmail.com"
+                                        class="form-control" />
+                                    @if ($errors->has('name'))
+                                    <span class="help-block" style="color:red">{{$errors->first('email')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group">
+                                    <label>Daftar Kehadiran</label>
+                                    <select name="kehadiran" class="form-control">
+                                        <option value="1">Pemberkatan Nikah</option>
+                                        <option value="2">Resepsi Pernikahan</option>
+                                        <option value="3">Keduanya</option>
+                                    </select>
+                                    @if ($errors->has('name'))
+                                    <span class="help-block" style="color:red">{{$errors->first('kehadiran')}}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group">
+                                    <label>Jumlah Kehadiran</label>
+                                    <select name="kuota" class="form-control">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                    @if ($errors->has('name'))
+                                    <span class="help-block" style="color:red">{{$errors->first('kuota')}}</span>
+                                    @endif
+                                </div>
+                                <button type="submit" value="submit" class="btn btn-dark btn-block">Submit</button>
+                            </form>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label>Address</label>
-                        <input type="text" name="alamat" placeholder="Ngagel Jaya Tengah 74 - 77"
-                            class="form-control" />
-                        @if ($errors->has('alamat'))
-                        <span style="color:red">{{$errors->first('alamat')}}</span>
-                        @endif
-                    </div>
-                    <div class="form-group">
-                        <label>Phone Number</label>
-                        <input type="number" name="telp" placeholder="+6287884914473" class="form-control" />
-                        @if ($errors->has('telp'))
-                        <span style="color:red">{{$errors->first('telp')}}</span>
-                        @endif
-                    </div>
-                    <div class="form-group">
-                        <label>Email</label>
-                        <input type="email" name="email" placeholder="johndoe@gmail.com" class="form-control" />
-                        @if ($errors->has('email'))
-                        <span style="color:red">{{$errors->first('email')}}</span>
-                        @endif
-                    </div>
-                    <div class="form-group">
-                        <label>Select your Attendance</label>
-                        <select name="kehadiran" class="form-control">
-                            <option value="1">Holy Matrimony</option>
-                            <option value="2">Wedding Dinner</option>
-                            <option value="3">Both</option>
-                        </select>
-                        @if ($errors->has('kehadiran'))
-                        <span style="color:red">{{$errors->first('kehadiran')}}</span>
-                        @endif
-                    </div>
-                    <div class="form-group">
-                        <label>Number of People</label>
-                        <select name="kuota" class="form-control">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                        </select>
-                        @if ($errors->has('kuota'))
-                        <span style="color:red">{{$errors->first('kuota')}}</span>
-                        @endif
-                    </div>
-                    <button type="submit" value="submit" class="btn btn-dark btn-block">Submit</button>
                 </form>
             </div>
         </div>
