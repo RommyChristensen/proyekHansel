@@ -12,8 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('UserIndex.index');
+    return view('UserIndex.home');
 });
+
+Route::get('/tes', function () {
+    return view('UserIndex.successVerify');
+});
+
 Route::get('/Burger123', function () {
     return view('AdminLayout.loginAdmin');
 });

@@ -351,13 +351,13 @@
                 </div>
             </div>
             <!-- <div class="row">
-                <p>
-                    <a class="social-link" href=""><span class="fab fa-facebook"></span></a>
-                    <a class="social-link" href=""><span class="fab fa-instagram"></span></a>
-                    <a class="social-link" href=""><span class="fab fa-google-plus-g"></span></a>
-                    <a class="social-link" href=""><span class="fab fa-twitter"></span></a>
-                </p>
-            </div> -->
+                    <p>
+                        <a class="social-link" href=""><span class="fab fa-facebook"></span></a>
+                        <a class="social-link" href=""><span class="fab fa-instagram"></span></a>
+                        <a class="social-link" href=""><span class="fab fa-google-plus-g"></span></a>
+                        <a class="social-link" href=""><span class="fab fa-twitter"></span></a>
+                    </p>
+                </div> -->
         </div>
         <div class="container mt-4 pt-3" style="border-top: 1px solid rgba(255, 255, 255, 0.2)">
             <div class="text-center">
