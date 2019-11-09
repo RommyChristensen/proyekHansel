@@ -29,19 +29,19 @@
                             <div id="carusel1" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                   <div class="carousel-item active">
-                                    <img class="d-block w-100" src="{{asset('wedding/po01.jpg')}}" alt="First slide">
+                                    <img class="d-block w-100" src="{{asset('wedding/po01.JPG')}}" alt="First slide">
                                   </div>
                                   <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{asset('wedding/po02.jpg')}}" alt="Second slide">
+                                    <img class="d-block w-100" src="{{asset('wedding/po02.JPG')}}" alt="Second slide">
                                   </div>
                                   <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{asset('wedding/po03.jpg')}}" alt="Third slide">
+                                    <img class="d-block w-100" src="{{asset('wedding/po03.JPG')}}" alt="Third slide">
                                   </div>
                                   <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{asset('wedding/po04.jpg')}}" alt="Third slide">
+                                    <img class="d-block w-100" src="{{asset('wedding/po04.JPG')}}" alt="Third slide">
                                   </div>
                                   <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{asset('wedding/po05.jpg')}}" alt="Third slide">
+                                    <img class="d-block w-100" src="{{asset('wedding/po05.JPG')}}" alt="Third slide">
                                   </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carusel1" role="button" data-slide="prev">
