@@ -26,22 +26,45 @@
                 <div class="wrap">
                     <div class="row d-flex">
                         <div class="col-md-6 d-flex">
-                            <div class="img d-flex align-self-stretch align-items-center"
-                                style="background-image:url({{asset('wedding/foto08.jpg')}});">
-                            </div>
+                            <div id="carusel1" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img class="d-block w-100" src="{{asset('wedding/po01.jpg')}}" alt="First slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="{{asset('wedding/po02.jpg')}}" alt="Second slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="{{asset('wedding/po03.jpg')}}" alt="Third slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="{{asset('wedding/po04.jpg')}}" alt="Third slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="{{asset('wedding/po05.jpg')}}" alt="Third slide">
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carusel1" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carusel1" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                              </div>
                         </div>
                         <div class="col-md-6 py-md-5 text">
                             <div class="py-md-4">
                                 <div class="row justify-content-start pb-3">
                                     <div class="col-md-12 ftco-animate p-4 p-lg-5 text-center">
-                                        <span class="subheading mb-4">Join us to celebrate <br>the wedding day
-                                            of</span>
+                                        <span class="subheading mb-4">Every love story is beautiful, but ours is my favorite #SOinLORve</span>
                                         <h2 class="mb-4">Lorenztino <span>&amp;</span> Sonia</h2>
                                         <span class="icon flaticon-rose-variant-outline-with-vines"></span>
-                                        <span class="subheading">Which is celebration on</span>
                                         <p class="time mb-4"><span>Feb | 1 | 2020</span></p>
-                                        <span class="subheading mb-5">06.00 pm</span>
+                                        <span class="subheading mb-5">Ballroom JW Marriott Hotel</span>
                                         <span class="subheading mb-5">Jl. Embong Malang 85-89 <br> Surabaya</span>
+                                        <span class="subheading mb-5">06.00 pm</span>
                                     </div>
                                 </div>
                             </div>
@@ -61,24 +84,23 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 ftco-animate" style="display:flex; align-items: center">
-                <div class="place img align-middle"
-                    style="background-image: url({{asset('newStyle/images/place-1.jpg')}})">
+            <div class="col-md-6 ftco-animate">
+                <div class="place img align-middle">
                     <div class="text text-center">
                         <span class="icon flaticon-reception-bell"></span>
                         <h3>Holy Matrimony</h3>
-                        <p><span>Saturday, February 1st 2020</span><br><span>11.30 am </span></p>
-                        <p><span>GBIS Kristus Terang Dunia, Jl. Embong Sawo 32, Surabaya</span></p>
+                        <p><span>Saturday, February 1st 2020</span><br><span>11.00 am </span></p>
+                        <p><span>GBIS Kristus Terang Dunia,<br> Jl. Embong Sawo 32, Surabaya</span></p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 ftco-animate align-middle">
-                <div class="place img " style="background-image: url({{asset('newStyle/images/place-2.jpg')}});">
+            <div class="col-md-6 ftco-animate">
+                <div class="place img ">
                     <div class="text text-center">
                         <span class="icon flaticon-wedding-kiss"></span>
                         <h3>Wedding Reception</h3>
                         <p><span>Saturday, February 1st 2020</span><br><span>06.00 pm </span></p>
-                        <p><span>Ballroom JW Marriott Hotel, Jl. Embong Malang 85-89, Surabaya</span></p>
+                        <p><span>Ballroom JW Marriott Hotel,<br> Jl. Embong Malang 85-89, Surabaya</span></p>
                     </div>
                 </div>
             </div>
@@ -232,7 +254,7 @@
         </div>
     </div>
 </section>
-<section class="ftco-section bg-section">
+<section class="ftco-section bg-section" id="Gallery-Section">
     <div class="overlay-top" style="background-image: url({{asset('newStyle/images/top-bg.jpg')}});"></div>
     <div class="overlay-bottom" style="background-image: url({{asset('newStyle/images/bottom-bg.jpg')}});"></div>
     <div class="container">
@@ -243,72 +265,34 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-md-10">
-                <div class="row">
-                    <div class="col-md-3 ftco-animate">
-                        <a href="{{asset('wedding/foto02.jpg')}}"
-                            class="gallery img image-popup d-flex align-items-center justify-content-center"
-                            style="background-image: url({{asset('wedding/foto02.jpg')}});">
-                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                    class="ion-ios-image"></span></div>
-                        </a>
+                <div id="carusel2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="{{asset('wedding/foto02.jpg')}}">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="{{asset('wedding/foto03.jpg')}}"">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="{{asset('wedding/foto06.jpg')}}">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="{{asset('wedding/foto07.jpg')}}">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="{{asset('wedding/foto09.jpg')}}">
+                      </div>
                     </div>
-                    <div class="col-md-3 ftco-animate">
-                        <a href="{{asset('wedding/foto03.jpg')}}"
-                            class="gallery img image-popup d-flex align-items-center justify-content-center"
-                            style="background-image: url({{asset('wedding/foto03.jpg')}});">
-                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                    class="ion-ios-image"></span></div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 ftco-animate">
-                        <a href="{{asset('wedding/foto07.jpg')}}"
-                            class="gallery img image-popup d-flex align-items-center justify-content-center"
-                            style="background-image: url({{asset('wedding/foto08.jpg')}});">
-                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                    class="ion-ios-image"></span></div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 ftco-animate">
-                        <a href="{{asset('wedding/foto09.jpg')}}"
-                            class="gallery img image-popup d-flex align-items-center justify-content-center"
-                            style="background-image: url({{asset('wedding/foto09.jpg')}});">
-                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                    class="ion-ios-image"></span></div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 ftco-animate">
-                        <a href="{{asset('wedding/po01.JPG')}}"
-                            class="gallery img image-popup d-flex align-items-center justify-content-center"
-                            style="background-image: url({{asset('wedding/po01.JPG')}});">
-                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                    class="ion-ios-image"></span></div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 ftco-animate">
-                        <a href="{{asset('wedding/po02.JPG')}}"
-                            class="gallery img image-popup d-flex align-items-center justify-content-center"
-                            style="background-image: url({{asset('wedding/po02.JPG')}});">
-                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                    class="ion-ios-image"></span></div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 ftco-animate">
-                        <a href="{{asset('wedding/po03.JPG')}}"
-                            class="gallery img image-popup d-flex align-items-center justify-content-center"
-                            style="background-image: url({{asset('wedding/po03.JPG')}});">
-                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                    class="ion-ios-image"></span></div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 ftco-animate">
-                        <a href="{{asset('wedding/po04.JPG.jpg')}}"
-                            class="gallery img image-popup d-flex align-items-center justify-content-center"
-                            style="background-image: url({{asset('wedding/po04.JPG')}});">
-                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                    class="ion-ios-image"></span></div>
-                        </a>
-                    </div>
-                </div>
+                    <a class="carousel-control-prev" href="#carusel2" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carusel2" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  <br>
             </div>
         </div>
     </div>

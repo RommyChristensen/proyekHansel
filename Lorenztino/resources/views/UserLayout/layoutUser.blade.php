@@ -35,7 +35,7 @@
                 <ul class="navbar-nav nav ml-auto">
                     <li class="nav-item"><a href="#when-where-section" class="nav-link"><span>Events</span></a></li>
                     <li class="nav-item"><a href="#rsvp-section" class="nav-link"><span>Registration</span></a>
-                    <li class="nav-item"><a href="#gallery-section" class="nav-link"><span>Gallery</span></a></li>
+                    <li class="nav-item"><a href="#Gallery-Section" class="nav-link"><span>Gallery</span></a></li>
                     </li>
                 </ul>
             </div>
@@ -69,7 +69,7 @@
                             document.write(new Date().getFullYear());
 
                         </script> All rights reserved | This template is made with <i class="icon-heart color-danger"
-                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Ong, Hansel Santoso</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>
@@ -98,10 +98,6 @@
     <script src="{{asset('newStyle/js/jquery.mb.YTPlayer.min.js')}}"></script>
     <script src="{{asset('newStyle/js/scrollax.min.js')}}"></script>
     <script src="{{asset('newStyle/js/main.js')}}"></script>
-    <script src="{{asset('newStyle/js/google-map.js')}}"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
-    </script>
-
 </body>
 
 </html>
