@@ -26,7 +26,7 @@
                 <div class="wrap">
                     <div class="row d-flex">
                         <div class="col-md-6 d-flex">
-                            <div id="carusel1" class="carousel slide" data-ride="carousel">
+                            <div id="carusel1" class="carousel slide d-flex align-self-stretch align-items-center" data-ride="carousel">
                                 <div class="carousel-inner">
                                   <div class="carousel-item active">
                                     <img class="d-block w-100" src="{{asset('wedding/po01.JPG')}}" alt="First slide">
