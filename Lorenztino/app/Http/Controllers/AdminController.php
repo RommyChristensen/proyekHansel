@@ -88,7 +88,8 @@ class AdminController extends Controller
         $newGuests->email = $request->email;  
         $newGuests->telp = $request->telp;   
         $newGuests->kuota = $request->kuota;  
-        $newGuests->kehadiran = $request->kehadiran; 
+        $newGuests->kehadiran = $request->kehadiran;
+        $newGuests->verfikasi_Admin = 2;
 
         $validator = Validator::make($request->all(), [
             // untuk error bisa d kasi nullable, required, dll
