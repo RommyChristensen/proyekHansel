@@ -52,6 +52,12 @@
             </a>
             <span class="icon-thumbnail">A</span>
           </li>
+          <li class="">
+            <a href="{{url('/Burger123/verifiedAttendance')}}" class="detailed">
+              <span class="title">Verified Attendance</span>
+            </a>
+            <span class="icon-thumbnail">A</span>
+          </li>
         </ul>
         <div class="clearfix"></div>
       </div>
@@ -204,7 +210,7 @@
                                     <span style="color:red">{{$errors->first('kuota')}}</span>
                                   @endif
                               </div>
-                              <button type="submit" class="btn btn-block btn-success">Add Attendance</button>
+                              <button type="submit" class="btn btn-block btn-success">Submit</button>
                               </div>
                       </div>
                   </div>

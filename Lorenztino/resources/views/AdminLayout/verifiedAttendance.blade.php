@@ -187,10 +187,10 @@
                                       <td>{{$item->kehadiran}}</td>
                                       <td>{{$item->kuota}}</td>
                                       <td>
-                                          <button type="submit" formaction="{{url('/Burger123/acceptVerified')}}" name="btnEdit" value="{{$item->id}}" class="btn btn-success"><i
+                                          <button type="submit" formaction="{{url('/Burger123/acceptVerified')}}" name="btnEdit" value="{{$item->id}}" class="btn btn-success btnEdit"><i
                                                   class="fa fa-check"></i></button>
-                                          <button type="submit" formaction="{{url('/Burger123/rejectVerified')}}" name="btnDelete" value="{{$item->id}}"
-                                              class="btn btn-danger"><i class="fa fa-times"></i></button>
+                                          <button type="button" name="btnDelete" value="{{$item->id}}"
+                                              class="btn btn-danger btnDelete"><i class="fa fa-times"></i></button>
                                       </td>
                                   </tr>
                                   @endforeach
@@ -314,6 +314,7 @@
     <script type="text/javascript" src="{{asset('assets/plugins/select2/js/select2.full.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('assets/plugins/classie/classie.js')}}"></script>
     <script src="{{asset('assets/plugins/switchery/js/switchery.min.js')}}" type="text/javascript"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- END VENDOR JS -->
     <!-- BEGIN CORE TEMPLATE JS -->
     <script src="{{asset('pages/js/pages.min.js')}}"></script>
@@ -321,5 +322,36 @@
     <!-- BEGIN PAGE LEVEL JS -->
     <script src="{{asset('assets/js/scripts.js')}}" type="text/javascript"></script>
     <!-- END PAGE LEVEL JS -->
+    <script>
+        $(document).ready(function () {
+            $("#myDataTable").on("click", ".btnDelete", function () {
+                swal({
+                        title: "Are you sure?",
+                        text: "Once deleted, you will not be able to recover this!",
+                        icon: "warning",
+                        buttons: true,
+                        dangerMode: true,
+                    })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                          let id = $(this).attr("value");
+                          $.ajax({
+                            method: "post",
+                            url: '{{url('/Burger123/rejectVerified')}}',
+                            data: {btnDelete : id, _token : '<?= csrf_token() ?>'},
+                            success: function(result){
+                              console.log(result);
+                              swal("Reject Success" + id, {
+                                icon: "success",
+                              }).then(function(){
+                                location.reload();
+                              });
+                            }
+                          });
+                        }
+                    });
+            });
+        });
+      </script>
   </body>
 </html>
