@@ -36,8 +36,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.flaticon-rose-variant-outline-with-vines:before { content: "\f100"; }
-.flaticon-rose-outline-variant-with-vines-and-leaves:before { content: "\f101"; }
-.flaticon-reception-bell:before { content: "\f102"; }
-.flaticon-wedding-kiss:before { content: "\f103"; }
+.flaticon-rose-variant-outline-with-vines:before { content: "\f103"; }
+.flaticon-rose-outline-variant-with-vines-and-leaves:before { content: "\f102"; }
+.flaticon-reception-bell:before { content: "\f100"; }
+.flaticon-wedding-kiss:before { content: "\f101"; }
 .flaticon-cake:before { content: "\f104"; }

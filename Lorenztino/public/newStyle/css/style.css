@@ -8655,6 +8655,9 @@ textarea.form-control {
   font-size: 64px;
   color: #f67e7d;
   font-family: "Great Vibes", cursive; }
+  @media (max-width: 991.98px) {
+    .ftco-about h2 {
+      font-size: 50px; } }
 
 .ftco-about .img {
   display: block;
@@ -8729,7 +8732,7 @@ textarea.form-control {
     right: 0;
     content: '';
     width: 100%;
-    height: 300px;
+    height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center; }
@@ -8740,7 +8743,7 @@ textarea.form-control {
     right: 0;
     content: '';
     width: 100%;
-    height: 300px;
+    height: 150px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center; }

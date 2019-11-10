@@ -58,7 +58,7 @@
                             <div class="py-md-4">
                                 <div class="row justify-content-start pb-3">
                                     <div class="col-md-12 ftco-animate p-4 p-lg-5 text-center">
-                                        <span class="subheading mb-4">Every love story is beautiful, but ours is my favorite #SOinLORve</span>
+                                        <span class="mb-4" style="font-size: 20pt">Every love story is beautiful, but ours is my favorite #SOinLORve</span>
                                         <h2 class="mb-4">Lorenztino <span>&amp;</span> Sonia</h2>
                                         <span class="icon flaticon-rose-variant-outline-with-vines"></span>
                                         <p class="time mb-4"><span>Feb | 1 | 2020</span></p>
@@ -90,7 +90,7 @@
                         <span class="icon flaticon-reception-bell"></span>
                         <h3>Holy Matrimony</h3>
                         <p><span>Saturday, February 1st 2020</span><br><span>11.00 am </span></p>
-                        <p><span>GBIS Kristus Terang Dunia,<br> Jl. Embong Sawo 32, Surabaya</span></p>
+                        <p><span>GBIS Kristus Terang Dunia<br> Jl. Embong Sawo 32, Surabaya</span></p>
                     </div>
                 </div>
             </div>
@@ -100,7 +100,7 @@
                         <span class="icon flaticon-wedding-kiss"></span>
                         <h3>Wedding Reception</h3>
                         <p><span>Saturday, February 1st 2020</span><br><span>06.00 pm </span></p>
-                        <p><span>Ballroom JW Marriott Hotel,<br> Jl. Embong Malang 85-89, Surabaya</span></p>
+                        <p><span>Ballroom JW Marriott Hotel<br> Jl. Embong Malang 85-89, Surabaya</span></p>
                     </div>
                 </div>
             </div>
@@ -108,11 +108,11 @@
     </div>
 </section>
 
-<section class="ftco-section bg-secondary" id="rsvp-section">
+<section class="ftco-section" id="rsvp-section">
     <div class="container">
         <div class="row justify-content-center pb-5">
             <div class="col-md-12 text-center heading-section ftco-animate">
-                <h2 class="mb-3">Are Your Attending?</h2>
+                <h2 class="mb-3">Are You Attending?</h2>
             </div>
         </div>
         <div class="row justify-content-center">
