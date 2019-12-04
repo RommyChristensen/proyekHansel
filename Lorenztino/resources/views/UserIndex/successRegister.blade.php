@@ -341,7 +341,7 @@
         <p style="font-size: 20">Thank you for your RSVP to our wedding</p>  <br>
         We are so happy to have you on our special day <br><br>
 
-        Please kindly verify check your email (including junk/spam) to verify your registration. <br><br>
+        Please kindly check your email (including junk/spam) to verify your registration. <br><br>
         Warm Regards, <br><br>
         <span style="font-family: 'MADE Saonara'; color: rgba(115,82,63);">
             Lorenztino <span style="font-family:'October Twilight'">&</span> Sonia
