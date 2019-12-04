@@ -44,7 +44,7 @@ class Register extends Controller
             $verifikasi["nama"] = $request->nama;
             $verifikasi["kode"] = $kode;
             Mail::to($tamu)->send(new Surat ("Mail.Verifikasi",$verifikasi,"Verifikasi Email"));
-            return view('UserIndex.successRegister');
+            return view('UserIndex.successRegister',['nama'=>$request->nama]);
         }
         else{
         }

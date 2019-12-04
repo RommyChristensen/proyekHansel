@@ -519,41 +519,25 @@
                                 <li data-target="#carousel-example-1z" data-slide-to="2"></li>
                                 <li data-target="#carousel-example-1z" data-slide-to="3"></li>
                                 <li data-target="#carousel-example-1z" data-slide-to="4"></li>
-                                <li data-target="#carousel-example-1z" data-slide-to="5"></li>
-                                <li data-target="#carousel-example-1z" data-slide-to="6"></li>
-                                <li data-target="#carousel-example-1z" data-slide-to="7"></li>
-                                <li data-target="#carousel-example-1z" data-slide-to="8"></li>
                             </ol>
                             <!--/.Indicators-->
                             <!--Slides-->
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="newHome/img/foto01.jpg" alt="First slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="newHome/img/foto02.jpg" alt="Second slide">
+                                    <img class="d-block w-100" src="newHome/img/foto02.jpg" alt="First slide">
                                 </div>x
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="newHome/img/foto03.jpg" alt="Third slide">
+                                    <img class="d-block w-100" src="newHome/img/foto03.jpg" alt="Second slide">
                                 </div>
                                 <!--/Third slide-->
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="newHome/img/foto04.jpg" alt="Fourth slide">
+                                    <img class="d-block w-100" src="newHome/img/foto06.jpg" alt="Third slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="newHome/img/foto05.jpg" alt="Fifth slide">
+                                    <img class="d-block w-100" src="newHome/img/foto07.jpg" alt="Fourth slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="newHome/img/foto06.jpg" alt="Sixth slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="newHome/img/foto07.jpg" alt="Seventh slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="newHome/img/foto08.jpg" alt="Seventh slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="newHome/img/foto09.jpg" alt="Seventh slide">
+                                    <img class="d-block w-100" src="newHome/img/foto09.jpg" alt="Fifth slide">
                                 </div>
                             </div>
                             <!--/.Slides-->
@@ -575,7 +559,7 @@
                 </div>
             </div>
 
-            <div class="row verify py-5">
+            {{-- <div class="row verify py-5">
                 <div class="mx-auto my-auto px-5 text-center avenir-next-m">
                     <h3 class="sweety-bunny">Hi Sonia,</h3> <br>
                     Thank you for your RSVP to our wedding <br>
@@ -590,7 +574,7 @@
                         Lorenztino <span style="font-family:'October Twilight'">&</span> Sonia
                     </span>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </main>
     <!--Main Layout-->

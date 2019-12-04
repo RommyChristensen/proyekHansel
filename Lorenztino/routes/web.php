@@ -19,6 +19,10 @@ Route::get('/tes', function () {
     return view('UserIndex.newHome');
 });
 
+Route::get('/sukses', function () {
+    return view('UserIndex.successRegister');
+});
+
 Route::get('/Burger123', function () {
     return view('AdminLayout.loginAdmin');
 });
