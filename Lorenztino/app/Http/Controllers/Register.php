@@ -58,7 +58,7 @@ class Register extends Controller
         // var_dump($newGuests);
         $newGuests->verfikasi_Email = 1; 
         if ($newGuests->save()) {
-            return view("UserIndex.successVerfication");
+            return view("UserIndex.successVerify");
         }
         else {
             
