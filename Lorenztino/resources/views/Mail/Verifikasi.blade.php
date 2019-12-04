@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    <div style="background-color:white ; width: 800px; text-align: center">
-        <img style="width: 800px" src="http://lorensonia.com/email/top-bg.jpg" alt="">
+    <div style="background-image:http://lorensonia.com/email/cover.jpg;  width: 800px; text-align: center">
+        {{-- <img style="width: 800px" src="http://lorensonia.com/email/top-bg.jpg" alt=""> --}}
         <div style="width: 600px; margin: 0 auto; padding: 0;">
             <h1><b>Hi {{ $pesan["nama"] }},</b></h1>
             <h3>Thank you for RSVP to our wedding. We are so happy to have you on our special day. Please verify your

@@ -444,21 +444,21 @@
                             @csrf
                             <div class="col-md-6 offset-md-3">
                                 <div class="md-form form-sm">
-                                    <span class="avenir-next-b">NAME</span>&nbsp;<input type="text" name="nama"
+                                    <span class="avenir-next-b">FULL NAME / NAMA LENGKAP</span>&nbsp;<input type="text" name="nama"
                                         class="form-control">
                                     @if ($errors->has('nama'))
                                     <span style="color:red">{{$errors->first('nama')}}</span>
                                     @endif
                                 </div>
                                 <div class="md-form form-sm">
-                                    <span class="avenir-next-b">ADDRESS</span>&nbsp;<input type="text" name="alamat"
+                                    <span class="avenir-next-b">ADDRESS / ALAMAT</span>&nbsp;<input type="text" name="alamat"
                                         class="form-control">
                                     @if ($errors->has('alamat'))
                                     <span style="color:red">{{$errors->first('alamat')}}</span>
                                     @endif
                                 </div>
                                 <div class="md-form form-sm">
-                                    <span class="avenir-next-b">PHONE NO.</span>&nbsp;<input type="text" name="telp"
+                                    <span class="avenir-next-b">PHONE NO. / NO. TELP</span>&nbsp;<input type="text" name="telp"
                                         class="form-control">
                                     @if ($errors->has('telp'))
                                     <span style="color:red">{{$errors->first('telp')}}</span>
@@ -472,7 +472,7 @@
                                     @endif
                                 </div>
                                 <div class="md-form form-sm">
-                                    <span class="avenir-next-b">SELECT YOUR ATTENDANCE</span>&nbsp;
+                                    <span class="avenir-next-b">SELECT YOUR ATTENDANCE / DAFTAR KEHADIRAN</span>&nbsp;
                                     <select name="kehadiran" class="form-control">
                                         <option value="1">Holy Matrimony</option>
                                         <option value="2">Wedding Dinner</option>
@@ -483,7 +483,7 @@
                                     @endif
                                 </div>
                                 <div class="md-form form-sm">
-                                    <span class="avenir-next-b">NUMBER OF PEOPLE</span>&nbsp;
+                                    <span class="avenir-next-b">NUMBER OF PEOPLE / JUMLAH KEHADIRAN</span>&nbsp;
                                     <select name="kuota" class="form-control">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
