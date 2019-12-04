@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/tes', function () {
-    return view('Mail.Verifikasi2');
+    return view('UserIndex.newHome');
 });
 
 Route::get('/Burger123', function () {
