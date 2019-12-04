@@ -22,8 +22,8 @@
             </h4>
 
             {{-- <button style="width: 200px; height: 50px; background-color: #B86B77; border: none" href="{{url('/verify')}}/{{ $pesan["kode"] }}">Verify</button> --}}
-            <button type="button" style="width: 200px; height: 50px;color:white; background-color: #B86B77; border: none" onclick="window.location.href = '{{url('/verify')}}/{{ $pesan['kode'] }}'" >Verify</button>
-            <button type="submit" style="width: 200px; height: 50px;color:white; background-color: #B86B77; border: none" onclick="window.location.href = '{{url('/verify')}}/{{ $pesan['kode'] }}'">Verify</button>
+            <button type="button" style="width: 200px; height: 50px;color:white; background-color: #B86B77; border: none" onclick="location.href = '{{url('/verify')}}/{{ $pesan['kode'] }}'" >Verify</button>
+            <button type="submit" style="width: 200px; height: 50px;color:white; background-color: #B86B77; border: none" onclick="location.href = '{{url('/verify')}}/{{ $pesan['kode'] }}'">Verify</button>
            
             {{-- <button style="width: 200px; height: 50px; background-color: #B86B77; border: none"><a
                     style="text-decoration: none; color:white;">Verify</a></button> --}}
