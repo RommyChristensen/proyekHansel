@@ -19,8 +19,8 @@ Route::get('/tes', function () {
     return view('UserIndex.newHome');
 });
 
-Route::get('/sukses', function () {
-    return view('UserIndex.successRegister');
+Route::get('/mail', function () {
+    return view('Mail.Verifikasi');
 });
 
 Route::get('/Burger123', function () {
