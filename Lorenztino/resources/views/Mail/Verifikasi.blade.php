@@ -21,8 +21,8 @@
                 Lorenztino and Sonia
             </h4>
 
-            <button style="width: 200px; height: 50px; background-color: #B86B77; border: none"><a
-                    style="text-decoration: none; color:white;" href="{{url('/verify')}}/{{ $pesan["kode"] }}">Verify</a></button>
+            {{-- <button style="width: 200px; height: 50px; background-color: #B86B77; border: none" href="{{url('/verify')}}/{{ $pesan["kode"] }}">Verify</button> --}}
+            <button style="width: 200px; height: 50px;color:white; background-color: #B86B77; border: none" href="{{url('/verify')}}/{{ $pesan["kode"] }}" >Verify</button>
            
             {{-- <button style="width: 200px; height: 50px; background-color: #B86B77; border: none"><a
                     style="text-decoration: none; color:white;">Verify</a></button> --}}
