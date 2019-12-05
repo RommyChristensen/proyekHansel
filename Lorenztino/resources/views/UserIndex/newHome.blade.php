@@ -423,8 +423,7 @@
 
             <div class="row soinlorve" style="height: 100vh;">
                 <div class="col-md-6 wow fadeIn my-auto container-soinlorve text-center">
-                    <h1 style="font-size: 29pt" class="mb-5 fs-soinlorve made-canvas"><span class="snell-roundhand">#</span>SOinLORve</h1>
-
+                    <h1 style="font-size: 26pt; margin-left: 10px;" class="mb-5 fs-soinlorve made-canvas"><span class="snell-roundhand">#</span>SOinLORve</h1>
                     <span style="font-size:10pt;" class="mt-10 avenir-next-m">SHARE YOUR PHOTOS ON OUR SPECIAL DAY</span>
                 </div>
             </div>
