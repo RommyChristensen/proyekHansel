@@ -425,7 +425,7 @@
                 <div class="col-md-6 wow fadeIn my-auto container-soinlorve text-center">
                     <h1 class="mb-5 fs-soinlorve made-canvas"><span class="snell-roundhand">#</span>SOinLORve</h1>
 
-                    <span class="mt-10 avenir-next-m">SHARE YOUR PHOTOS ON OUR SPECIAL DAY</span>
+                    <span style="font-size:10pt" class="mt-10 avenir-next-m">SHARE YOUR PHOTOS ON OUR SPECIAL DAY</span>
                 </div>
             </div>
 
