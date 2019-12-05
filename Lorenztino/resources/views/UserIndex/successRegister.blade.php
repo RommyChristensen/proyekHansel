@@ -338,12 +338,10 @@
 <div class="row verify py-5">
     <div class="mx-auto my-auto px-5 text-center avenir-next-m">
         <h3 class="sweety-bunny">Hi {{ $nama }},</h3> <br>
-        <p style="font-size: 20">Thank you for your RSVP to our wedding</p>  <br>
-        We are so happy to have you on our special day <br><br>
-
-        Please kindly check your email (including junk/spam) to verify your registration. <br><br>
-        Warm Regards, <br><br>
-        <span style="font-family: 'MADE Saonara'; color: rgba(115,82,63);">
+        <h2>Thank you for registering</h2> 
+        <h5>See you on our wedding day!</h5>
+        <br>
+        <span style="font-family: 'MADE Saonara'; color: rgba(115,82,63); font-size: 30pt">
             Lorenztino <span style="font-family:'October Twilight'">&</span> Sonia
         </span>
     </div>

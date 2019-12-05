@@ -410,13 +410,13 @@
                 <div class="col-md-6 my-auto wow fadeIn">
                     <div class="avenir-next-m ls-3" style="font-weight: 700"><strong>HOLY MATRIMONY</strong></div>
                     <br>
-                    <div style="font-weight: bold" class="avenir-next-m ls-3">GBIS KRISTUS TERANG DUNIA AT 11 AM</div>
+                    <div style="font-weight: bold; font-size: 90%" class="avenir-next-m ls-3">GBIS KRISTUS TERANG DUNIA AT 11 AM</div>
                     <div class="avenir-next-m ls-3">JL. EMBONG SAWO 32, SURABAYA</div>
 
                     <br><br>
                     <div class="avenir-next-m ls-3" style="font-weight: 700"><strong>WEDDING RECEPTION</strong></div>
                     <br>
-                    <div style="font-weight: bold" class="avenir-next-m ls-3">BALLROOM JW MARRIOT HOTEL AT 6 PM</div>
+                    <div style="font-weight: bold; font-size: 90%" class="avenir-next-m ls-3">BALLROOM JW MARRIOT HOTEL AT 6 PM</div>
                     <div class="avenir-next-m ls-3">JL. EMBONG MALANG 85 - 89, SURABAYA</div>
                 </div>
             </div>
