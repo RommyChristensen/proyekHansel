@@ -404,7 +404,7 @@
         <div class="container-fluid">
             <div id="events" class="row text-center the-wedding">
                 <div class="col-md-6 my-auto wow fadeIn">
-                    <div style="font-weight: 700; font-size: 40pt" class="avenir-next-b ls-5"><strong>THE WEDDING</strong></div>
+                    <div style="font-weight: 700; font-size: 20pt" class="avenir-next-b ls-5"><strong>THE WEDDING</strong></div>
                     <div class="mt-4 avenir-next-m ls-5">FEB.01.2020</div>
                 </div>
                 <div class="col-md-6 my-auto wow fadeIn">
