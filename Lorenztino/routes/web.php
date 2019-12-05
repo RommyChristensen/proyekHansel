@@ -12,12 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('UserIndex.home');
+    return view('UserIndex.newhome');
 });
 
-Route::get('/tes', function () {
-    return view('UserIndex.newHome');
-});
+// Route::get('/tes', function () {
+//     return view('UserIndex.newHome');
+// });
 
 Route::get('/cek', function () {
     return view('UserIndex.successRegister');
