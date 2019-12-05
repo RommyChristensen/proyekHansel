@@ -72,42 +72,42 @@
 
         @font-face {
             font-family: 'MADE Saonara';
-            src: url('font/MADE SAONARA PERSONAL USE.otf');
+            src: url('newHome/font/MADE SAONARA PERSONAL USE.otf');
         }
 
         @font-face {
             font-family: 'MADE Canvas';
-            src: url('font/MADE Canvas Light PERSONAL USE.otf');
+            src: url('newHome/font/MADE Canvas Light PERSONAL USE.otf');
         }
 
         @font-face {
             font-family: 'October Twilight';
-            src: url('font/October Twilight.ttf');
+            src: url('newHome/font/October Twilight.ttf');
         }
 
         @font-face {
             font-family: 'Avenir Next M';
-            src: url('font/Avenir.ttc');
+            src: url('newHome/font/Avenir.ttc');
         }
 
         @font-face {
             font-family: 'Avenir Next B';
-            src: url('font/Avenir Next.ttc');
+            src: url('newHome/font/Avenir Next.ttc');
         }
 
         @font-face {
             font-family: 'Champignon';
-            src: url('font/Champignon.otf');
+            src: url('newHome/font/Champignon.otf');
         }
 
         @font-face {
             font-family: 'Snell roundhand';
-            src: url('font/SnellRoundhand.ttc');
+            src: url('newHome/font/SnellRoundhand.ttc');
         }
 
         @font-face {
             font-family: 'Sweetie bunny';
-            src: url('font/SweetieBunny.ttf');
+            src: url('newHome/font/SweetieBunny.ttf');
         }
 
         .banner {
