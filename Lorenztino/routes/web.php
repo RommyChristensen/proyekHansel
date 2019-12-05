@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('UserIndex.newhome');
+    // return view('UserIndex.home');
+    return view('UserIndex.newHome');
 });
 
 // Route::get('/tes', function () {
