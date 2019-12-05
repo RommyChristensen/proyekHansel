@@ -223,7 +223,7 @@
 
         .verify {
             height: 100vh;
-            background-image: url('newHome/img/06. verify.jpg');
+            background-image: url('../newHome/img/06. verify.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
