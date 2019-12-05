@@ -186,7 +186,7 @@
         }
 
         .loren-sonia {
-            background-image: url('newHome/img/01. lorenztino sonia.jpg');
+            background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('newHome/img/01. lorenztino sonia.jpg'); /* TAMBAH OPACITY AE WS */
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
@@ -404,18 +404,20 @@
         <div class="container-fluid">
             <div id="events" class="row text-center the-wedding">
                 <div class="col-md-6 my-auto wow fadeIn">
-                    <div class="avenir-next-b"><strong>THE WEDDING</strong></div>
-                    <div class="mt-4 avenir-next-m">FEB.01.2020</div>
+                    <div class="avenir-next-b ls-5"><strong>THE WEDDING</strong></div>
+                    <div class="mt-4 avenir-next-m ls-5">FEB.01.2020</div>
                 </div>
                 <div class="col-md-6 my-auto wow fadeIn">
-                    <div class="avenir-next-b"><strong>HOLY MATRIMONY</strong></div>
-                    <div class="avenir-next-m">GBIS KRISTUS TERANG DUNIA AT 11 AM</div>
-                    <div class="avenir-next-m">JL. EMBONG SAWO 32, SURABAYA</div>
+                    <div class="avenir-next-m ls-3" style="font-weight: 700"><strong>HOLY MATRIMONY</strong></div>
+                    <br>
+                    <div style="font-weight: bold" class="avenir-next-m ls-3">GBIS KRISTUS TERANG DUNIA AT 11 AM</div>
+                    <div class="avenir-next-m ls-3">JL. EMBONG SAWO 32, SURABAYA</div>
 
                     <br><br>
-                    <div class="avenir-next-b"><strong>WEDDING RECEPTION</strong></div>
-                    <div class="avenir-next-m">BALLROOM JW MARRIOT HOTEL AT 6 PM</div>
-                    <div class="avenir-next-m">JL. EMBONG MALANG 85 - 89, SURABAYA</div>
+                    <div class="avenir-next-m ls-3" style="font-weight: 700"><strong>WEDDING RECEPTION</strong></div>
+                    <br>
+                    <div style="font-weight: bold" class="avenir-next-m ls-3">BALLROOM JW MARRIOT HOTEL AT 6 PM</div>
+                    <div class="avenir-next-m ls-3">JL. EMBONG MALANG 85 - 89, SURABAYA</div>
                 </div>
             </div>
 
