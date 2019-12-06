@@ -338,10 +338,10 @@
 <div class="row verify py-5">
     <div class="mx-auto my-auto px-5 text-center avenir-next-m">
         <h3 class="sweety-bunny">Hi {{ $nama }},</h3> <br>
-        <h2>Thank you for registering</h2> 
-        <h5>See you on our wedding day!</h5>
+        <h5>Thank you for your RSVP to our wedding. <br> We are so happy to have you our special day</h5>
         <br>
-        <span style="font-family: 'MADE Saonara'; color: rgba(115,82,63); font-size: 30pt">
+        <p style="font-weight: bold">Warm Regards,</p>
+        <span style="font-family: 'MADE Saonara'; color: rgba(115,82,63); font-size: 20pt">
             Lorenztino <span style="font-family:'October Twilight'">&</span> Sonia
         </span>
     </div>
