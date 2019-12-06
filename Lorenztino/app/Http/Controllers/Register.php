@@ -27,13 +27,18 @@ class Register extends Controller
             'nama' => 'required|min:2',
             'email' => 'required|email',
             'alamat' => 'required',
-            'telp' => 'required|digits_between:3,15|numeric',
+            'telp' => 'required|between:3,15',
             'kuota' => 'required|between:1,4',
             'kehadiran' => 'required'
+        ],[
+            'between' => 'The phone number must  between 3 and 15 characters.'
         ]);
+        $messages = [
+            'telp'    => 'The phone number must be ex:081928270981',
+        ];
 
         if($validator->fails()){
-            return redirect(url()->previous() . "#reg")
+            return redirect(url()->previous() . "#rsvp")
             ->withErrors($validator)
             ->withInput();
         }

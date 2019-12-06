@@ -129,8 +129,8 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'telp' => [
+            'required|digits_between:3,15|numeric' => 'tokek makan ayam',
         ],
     ],
 
