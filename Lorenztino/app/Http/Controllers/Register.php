@@ -43,7 +43,7 @@ class Register extends Controller
             $kode = hash("SHA512",($newGuests->id));
             $verifikasi["nama"] = $request->nama;
             $verifikasi["kode"] = $kode;
-            Mail::to($tamu)->send(new Surat ("Mail.Verifikasi",$verifikasi,"Verifikasi Email"));
+            // Mail::to($tamu)->send(new Surat ("Mail.Verifikasi",$verifikasi,"Verifikasi Email"));
             return view('UserIndex.successRegister',['nama'=>$request->nama]);
         }
         else{
