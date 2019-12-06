@@ -146,6 +146,10 @@
             letter-spacing: 3px;
         }
 
+        .ls-5{
+            letter-spacing: 5px;
+        }
+
         .ls-10 {
             letter-spacing: 10px;
         }
@@ -231,6 +235,13 @@
             background-position: center center;
         }
 
+        .share-your-photo{
+            position: absolute;
+            text-align: center;
+            left: 25%;
+            top: 35vh;
+        }
+
         @media screen and (max-width: 1023px) {
             .fs-slash {
                 font-size: 45pt;
@@ -271,6 +282,12 @@
                 max-width: 50%;
             }
 
+            .share-your-photo{
+                font-size: 10pt;
+                left: 25%;
+                top: 10vh;
+            }
+
             .loren-sonia {
                 background-image: url('newHome/img/01. lorenztino sonia mobile.jpg');
             }
@@ -286,6 +303,10 @@
 
             .fs-slash {
                 font-size: 25pt;
+            }
+
+            .translate-20{
+                transform: translate(0, 20px);
             }
 
             .the-wedding {
@@ -325,6 +346,14 @@
         @media only screen and (max-width: 700px) {
             .modal-content {
                 width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 424px) {
+            .share-your-photo{
+                font-size: 10pt;
+                left: 15%;
+                top: 10vh;
             }
         }
 
@@ -371,7 +400,7 @@
         <!-- Full Page Intro -->
         <div class="view jarallax loren-sonia" data-jarallax='{"speed": 0.2}'>
             <!-- Mask & flexbox options-->
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-top">
+            <div class="mask d-flex justify-content-center align-items-top">
                 <!-- Content -->
                 <div class="container">
                     <!--Grid row-->
@@ -424,7 +453,7 @@
             <div class="row soinlorve" style="height: 100vh;">
                 <div class="col-md-6 wow fadeIn my-auto container-soinlorve text-center">
                     <h1 class="mb-5 fs-soinlorve made-canvas"><span class="snell-roundhand">#</span>SOinLORve</h1>
-                    <span class="mt-10 avenir-next-m">SHARE YOUR PHOTOS ON OUR SPECIAL DAY</span>
+                    <div class="share-your-photo avenir-next-m">SHARE YOUR PHOTOS ON OUR SPECIAL DAY</div>
                 </div>
             </div>
 
