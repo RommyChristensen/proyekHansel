@@ -196,14 +196,18 @@
                               </div>
                               <div class="form-group">
                                   <label>Number of People</label>
-                                  <select name="kuota" class="full-width select2-hidden-accessible"
-                                      data-init-plugin="select2" tabindex="-1" aria-hidden="true">
-                                      <option value="1" {{($edited[0]->kuota == 1) ? "selected" : ""}}>1</option>
-                                      <option value="2" {{($edited[0]->kuota == 2) ? "selected" : ""}}>2</option>
-                                  </select>
+                                  <input type="number" value="{{$edited[0]->email}}" name="kuota" class="form-control">
                                   @if ($errors->has('kuota'))
                                     <span style="color:red">{{$errors->first('kuota')}}</span>
                                   @endif
+                                  {{-- <select name="kuota" class="full-width select2-hidden-accessible"
+                                      data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                                      <option value="1" {{($edited[0]->kuota == 1) ? "selected" : ""}}>1</option>
+                                      <option value="2" {{($edited[0]->kuota == 2) ? "selected" : ""}}>2</option>
+                                  </select> --}}
+                                  {{-- @if ($errors->has('kuota'))
+                                    <span style="color:red">{{$errors->first('kuota')}}</span>
+                                  @endif --}}
                               </div>
                               <button type="submit" class="btn btn-block btn-success">Add Attendance</button>
                               </div>

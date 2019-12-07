@@ -177,6 +177,7 @@
                                       <th>Telp</th>
                                       <th>Kehadiran</th>
                                       <th>Kuota</th>
+                                      <th>Tanggal Daftar</th>
                                       <th>Action</th>
                                   </tr>
                               </thead>
@@ -195,6 +196,7 @@
                                       <td>{{$item->telp}}</td>
                                       <td>{{$item->kehadiran}}</td>
                                       <td>{{$item->kuota}}</td>
+                                      <td>{{$item->created_at}}</td>
                                       <td>
                                           <button type="submit" formaction="{{url('/Burger123/editAttendance')}}" name="btnEdit" value="{{$item->id}}" class="btn btn-info"><i
                                                   class="fa fa-edit"></i></button>
