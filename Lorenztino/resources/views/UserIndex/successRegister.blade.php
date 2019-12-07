@@ -72,42 +72,42 @@
 
         @font-face {
             font-family: 'MADE Saonara';
-            src: url('newHome/font/MADE SAONARA PERSONAL USE.otf');
+            src: url('../newHome/font/MADE SAONARA PERSONAL USE.otf');
         }
 
         @font-face {
             font-family: 'MADE Canvas';
-            src: url('newHome/font/MADE Canvas Light PERSONAL USE.otf');
+            src: url('../newHome/font/MADE Canvas Light PERSONAL USE.otf');
         }
 
         @font-face {
             font-family: 'October Twilight';
-            src: url('newHome/font/October Twilight.ttf');
+            src: url('../newHome/font/October Twilight.ttf');
         }
 
         @font-face {
             font-family: 'Avenir Next M';
-            src: url('newHome/font/Avenir.ttc');
+            src: url('../newHome/font/Avenir.ttc');
         }
 
         @font-face {
             font-family: 'Avenir Next B';
-            src: url('newHome/font/Avenir Next.ttc');
+            src: url('../newHome/font/Avenir Next.ttc');
         }
 
         @font-face {
             font-family: 'Champignon';
-            src: url('newHome/font/Champignon.otf');
+            src: url('../newHome/font/Champignon.otf');
         }
 
         @font-face {
             font-family: 'Snell roundhand';
-            src: url('newHome/font/SnellRoundhand.ttc');
+            src: url('../newHome/font/SnellRoundhand.ttc');
         }
 
         @font-face {
             font-family: 'Sweetie bunny';
-            src: url('newHome/font/SweetieBunny.ttf');
+            src: url('../newHome/font/SweetieBunny.ttf');
         }
 
         .banner {
@@ -337,8 +337,9 @@
 </head>
 <div class="row verify py-5">
     <div class="mx-auto my-auto px-5 text-center avenir-next-m">
-        <h3 class="sweety-bunny">Hi {{ $nama }},</h3> <br>
-        <h5>Thank you for your RSVP to our wedding. <br> We are so happy to have you our special day</h5>
+        {{-- <h3 class="sweety-bunny">Hi {{ $nama }},</h3> <br> --}}
+        <h3 class="sweety-bunny">Hi TOKK,</h3> <br>
+        <h5>Thank you for your RSVP to our wedding. <br> We are so happy to have you on our special day</h5>
         <br>
         <p style="font-weight: bold">Warm Regards,</p>
         <span style="font-family: 'MADE Saonara'; color: rgba(115,82,63); font-size: 20pt">
