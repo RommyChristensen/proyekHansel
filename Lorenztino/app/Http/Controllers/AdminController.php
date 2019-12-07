@@ -24,7 +24,7 @@ class AdminController extends Controller
         
         $username = $request['username'];
         $password = $request['password'];
-        if ($username == 'admin' && $password == 'admin') {
+        if ($username == 'lorensonia' && $password == 'jwmarriot122020') {
 
         $tamu = $this->getTamu();
         Session::put("username",$username);
