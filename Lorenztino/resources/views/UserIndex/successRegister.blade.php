@@ -337,8 +337,7 @@
 </head>
 <div class="row verify py-5">
     <div class="mx-auto my-auto px-5 text-center avenir-next-m">
-        {{-- <h3 class="sweety-bunny">Hi {{ $nama }},</h3> <br> --}}
-        <h3 class="sweety-bunny">Hi TOKK,</h3> <br>
+        <h3 class="sweety-bunny">Hi {{ $nama }},</h3> <br>
         <h5>Thank you for your RSVP to our wedding. <br> We are so happy to have you on our special day</h5>
         <br>
         <p style="font-weight: bold">Warm Regards,</p>
