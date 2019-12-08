@@ -504,8 +504,8 @@
                                 <div class="md-form form-sm">
                                     <span class="avenir-next-b">SELECT YOUR ATTENDANCE / DAFTAR KEHADIRAN</span>&nbsp;
                                     <select name="kehadiran" class="form-control">
-                                        <option value="1">Holy Matrimony</option>
                                         <option value="2">Wedding Dinner</option>
+                                        <option value="1">Holy Matrimony</option>
                                         <option value="3">Both</option>
                                     </select>
                                     @if ($errors->has('kehadiran'))
