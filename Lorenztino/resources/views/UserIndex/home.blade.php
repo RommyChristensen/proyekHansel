@@ -218,7 +218,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Email</label>
-                                    <input type="email" name="email" placeholder="johndoe@gmail.com"
+                                    <input type="text" name="email" placeholder="johndoe@gmail.com"
                                         class="form-control" />
                                     @if ($errors->has('name'))
                                     <span class="help-block" style="color:red">{{$errors->first('email')}}</span>

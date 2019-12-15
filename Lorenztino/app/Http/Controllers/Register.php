@@ -25,7 +25,7 @@ class Register extends Controller
             // kalo nullable brti bisa d kosongin
             // kalo required brti semua nya harus diisi
             'nama' => 'required|min:2',
-            'email' => 'required|email',
+            // 'email' => 'required|email',
             'alamat' => 'required',
             'telp' => 'required|between:3,15',
             'kuota' => 'required|between:1,4',
