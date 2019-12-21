@@ -28,8 +28,12 @@ class AdminController extends Controller
 
         $tamu = $this->getTamu();
         Session::put("username",$username);
-
-        return view('AdminLayout.adminDashboard', ['tamu' => $tamu]);
+        // $total = DB::table('tamu')->sum('kuota')->where('verifikasi_admin =',2);
+        $total = DB::table('tamu')->where('verfikasi_Admin', 2)->sum('kuota');
+        $jumlah = DB::table('tamu')->where('verfikasi_Admin', 2)->count('kuota');
+        
+        // $jumlah = DB::table('tamu')->count('kuota')->where('verifikasi_admin =',2);
+        return view('AdminLayout.adminDashboard', ['tamu' => $tamu])->with('total',$total)->with('jumlah',$jumlah);
 
        }else{
            return view('AdminLayout.loginAdmin');
@@ -78,7 +82,8 @@ class AdminController extends Controller
             ]);
         $verified = DB::table('tamu')->where('verfikasi_Admin', 0)->get();
         $rejected = DB::table('tamu')->where('verfikasi_Admin', 1)->get();
-        return view('AdminLayout.verifiedAttendance', ['tamu' => $verified, 'reject' => $rejected]);
+        $total = DB::table('tamu')->sum('kuota');
+        return view('AdminLayout.verifiedAttendance', ['tamu' => $verified, 'reject' => $rejected])->with('total',$total);
     }
 
     public function addProses(Request $request){
@@ -111,7 +116,8 @@ class AdminController extends Controller
 
         if ($newGuests->save()) {
             $tamu = $this->getTamu();
-            return view('AdminLayout.adminDashboard', ['tamu' => $tamu]);
+            $total = DB::table('tamu')->sum('kuota');
+            return view('AdminLayout.adminDashboard', ['tamu' => $tamu])->with('total',$total);
         }
         else{
             return view('failed');
@@ -125,7 +131,8 @@ class AdminController extends Controller
             ->delete();
         if($res){
             $tamu = $this->getTamu();
-            return view('AdminLayout.adminDashboard', ['tamu' => $tamu]);
+            $total = DB::table('tamu')->sum('kuota');
+            return view('AdminLayout.adminDashboard', ['tamu' => $tamu])->with('total',$total);
         }
         else "failed";
     }
@@ -149,8 +156,8 @@ class AdminController extends Controller
                 'kehadiran' => $kehadiran,
                 'updated_at' => $updated
             ]);
-        
-            if($res) return view('AdminLayout.adminDashboard', ['tamu' => $this->getTamu()]);
+            $total = DB::table('tamu')->sum('kuota');            
+            if($res) return view('AdminLayout.adminDashboard', ['tamu' => $this->getTamu()])->with('total',$total);
             else echo "failed";
 
 

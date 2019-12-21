@@ -160,6 +160,8 @@
               <div class="panel-heading">
                 <div class="panel-title">
                   <h3>Data User</h3>
+                  <h5>Total Kuota : {{ $total }}</p></h5> 
+                  <h5>Jumlah Undangan : {{ $jumlah }}</h5> 
                   </div>
                   <div class="pull-right">
                       <a href="{{url('/Burger123/insertAttendance')}}" class="btn btn-success">Add Row</a>
