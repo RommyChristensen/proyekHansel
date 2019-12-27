@@ -129,8 +129,8 @@ class AdminController extends Controller
             $tamu = $this->getTamu();
             $total = DB::table('tamu')->where('verfikasi_Admin', 2)->sum('kuota');
             $jumlah = DB::table('tamu')->where('verfikasi_Admin', 2)->count('kuota');
-            $jumlahGreja = DB::table('tamu')->where('kehadiran', 1)->sum('kuota');
-            $jumlahResepsi = DB::table('tamu')->where('kehadiran', 2)->sum('kuota');
+            $jumlahGreja = DB::table('tamu')->where('kehadiran', 2)->sum('kuota');
+            $jumlahResepsi = DB::table('tamu')->where('kehadiran', 1)->sum('kuota');
             $jumlahGrejaResepsi = DB::table('tamu')->where('kehadiran', 3)->sum('kuota');
             return view('AdminLayout.adminDashboard', ['tamu' => $tamu])->with('total',$total)->with('jumlah',$jumlah)->with('jumlahGreja',$jumlahGreja)->with('jumlahResepsi',$jumlahResepsi)->with('jumlahGrejaResepsi',$jumlahGrejaResepsi);
         }
