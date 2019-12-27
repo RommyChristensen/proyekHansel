@@ -19,7 +19,10 @@ class AdminController extends Controller
     public function toDashboard(){
         $total = DB::table('tamu')->where('verfikasi_Admin', 2)->sum('kuota');
         $jumlah = DB::table('tamu')->where('verfikasi_Admin', 2)->count('kuota');
-        return view('AdminLayout.adminDashboard', ['tamu' => $this->getTamu()])->with('total',$total)->with('jumlah',$jumlah);
+        $jumlahGreja = DB::table('tamu')->where('kehadiran', 1)->sum('kuota');
+        $jumlahResepsi = DB::table('tamu')->where('kehadiran', 2)->sum('kuota');
+        $jumlahGrejaResepsi = DB::table('tamu')->where('kehadiran', 3)->sum('kuota');
+        return view('AdminLayout.adminDashboard', ['tamu' => $this->getTamu()])->with('total',$total)->with('jumlah',$jumlah)->with('jumlahGreja',$jumlahGreja)->with('jumlahResepsi',$jumlahResepsi)->with('jumlahGrejaResepsi',$jumlahGrejaResepsi);
     }
 
     public function login(Request $request){
@@ -33,9 +36,11 @@ class AdminController extends Controller
         // $total = DB::table('tamu')->sum('kuota')->where('verifikasi_admin =',2);
         $total = DB::table('tamu')->where('verfikasi_Admin', 2)->sum('kuota');
         $jumlah = DB::table('tamu')->where('verfikasi_Admin', 2)->count('kuota');
-        
+        $jumlahGreja = DB::table('tamu')->where('kehadiran', 1)->sum('kuota');
+        $jumlahResepsi = DB::table('tamu')->where('kehadiran', 2)->sum('kuota');
+        $jumlahGrejaResepsi = DB::table('tamu')->where('kehadiran', 3)->sum('kuota');
         // $jumlah = DB::table('tamu')->count('kuota')->where('verifikasi_admin =',2);
-        return view('AdminLayout.adminDashboard', ['tamu' => $tamu])->with('total',$total)->with('jumlah',$jumlah);
+        return view('AdminLayout.adminDashboard', ['tamu' => $tamu])->with('total',$total)->with('jumlah',$jumlah)->with('jumlahGreja',$jumlahGreja)->with('jumlahResepsi',$jumlahResepsi)->with('jumlahGrejaResepsi',$jumlahGrejaResepsi);
 
        }else{
            return view('AdminLayout.loginAdmin');
@@ -86,8 +91,10 @@ class AdminController extends Controller
         $rejected = DB::table('tamu')->where('verfikasi_Admin', 1)->get();
         $total = DB::table('tamu')->where('verfikasi_Admin', 2)->sum('kuota');
         $jumlah = DB::table('tamu')->where('verfikasi_Admin', 2)->count('kuota');
-        
-        return view('AdminLayout.verifiedAttendance', ['tamu' => $verified, 'reject' => $rejected])->with('total',$total)->with('jumlah',$jumlah);
+        $jumlahGreja = DB::table('tamu')->where('kehadiran', 1)->sum('kuota');
+        $jumlahResepsi = DB::table('tamu')->where('kehadiran', 2)->sum('kuota');
+        $jumlahGrejaResepsi = DB::table('tamu')->where('kehadiran', 3)->sum('kuota');
+        return view('AdminLayout.verifiedAttendance', ['tamu' => $verified, 'reject' => $rejected])->with('total',$total)->with('jumlah',$jumlah)->with('jumlahGreja',$jumlahGreja)->with('jumlahResepsi',$jumlahResepsi)->with('jumlahGrejaResepsi',$jumlahGrejaResepsi);
     }
 
     public function addProses(Request $request){
@@ -122,7 +129,10 @@ class AdminController extends Controller
             $tamu = $this->getTamu();
             $total = DB::table('tamu')->where('verfikasi_Admin', 2)->sum('kuota');
             $jumlah = DB::table('tamu')->where('verfikasi_Admin', 2)->count('kuota');
-            return view('AdminLayout.adminDashboard', ['tamu' => $tamu])->with('total',$total)->with('jumlah',$jumlah);
+            $jumlahGreja = DB::table('tamu')->where('kehadiran', 1)->sum('kuota');
+            $jumlahResepsi = DB::table('tamu')->where('kehadiran', 2)->sum('kuota');
+            $jumlahGrejaResepsi = DB::table('tamu')->where('kehadiran', 3)->sum('kuota');
+            return view('AdminLayout.adminDashboard', ['tamu' => $tamu])->with('total',$total)->with('jumlah',$jumlah)->with('jumlahGreja',$jumlahGreja)->with('jumlahResepsi',$jumlahResepsi)->with('jumlahGrejaResepsi',$jumlahGrejaResepsi);
         }
         else{
             return view('failed');
@@ -138,7 +148,10 @@ class AdminController extends Controller
             $tamu = $this->getTamu();
             $total = DB::table('tamu')->where('verfikasi_Admin', 2)->sum('kuota');
             $jumlah = DB::table('tamu')->where('verfikasi_Admin', 2)->count('kuota');
-            return view('AdminLayout.adminDashboard', ['tamu' => $tamu])->with('total',$total)->with('jumlah',$jumlah);
+            $jumlahGreja = DB::table('tamu')->where('kehadiran', 1)->sum('kuota');
+            $jumlahResepsi = DB::table('tamu')->where('kehadiran', 2)->sum('kuota');
+            $jumlahGrejaResepsi = DB::table('tamu')->where('kehadiran', 3)->sum('kuota');
+            return view('AdminLayout.adminDashboard', ['tamu' => $tamu])->with('total',$total)->with('jumlah',$jumlah)->with('jumlahGreja',$jumlahGreja)->with('jumlahResepsi',$jumlahResepsi)->with('jumlahGrejaResepsi',$jumlahGrejaResepsi);
         }
         else "failed";
     }
@@ -163,8 +176,11 @@ class AdminController extends Controller
                 'updated_at' => $updated
             ]);
             $total = DB::table('tamu')->where('verfikasi_Admin', 2)->sum('kuota');
-            $jumlah = DB::table('tamu')->where('verfikasi_Admin', 2)->count('kuota');        
-            if($res) return view('AdminLayout.adminDashboard', ['tamu' => $this->getTamu()])->with('total',$total)->with('jumlah',$jumlah);
+            $jumlah = DB::table('tamu')->where('verfikasi_Admin', 2)->count('kuota');     
+            $jumlahGreja = DB::table('tamu')->where('kehadiran', 1)->sum('kuota');
+            $jumlahResepsi = DB::table('tamu')->where('kehadiran', 2)->sum('kuota');
+            $jumlahGrejaResepsi = DB::table('tamu')->where('kehadiran', 3)->sum('kuota');   
+            if($res) return view('AdminLayout.adminDashboard', ['tamu' => $this->getTamu()])->with('total',$total)->with('jumlah',$jumlah)->with('jumlahGreja',$jumlahGreja)->with('jumlahResepsi',$jumlahResepsi)->with('jumlahGrejaResepsi',$jumlahGrejaResepsi);
             else echo "failed";
 
 
