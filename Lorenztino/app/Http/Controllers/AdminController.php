@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 //use Maatwebsite\Excel\Facades\Excel;
-use App\Exports\UsersExport;
+//use App\Exports\UsersExport;
 
 class AdminController extends Controller
 {
