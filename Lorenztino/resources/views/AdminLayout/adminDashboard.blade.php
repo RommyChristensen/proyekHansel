@@ -242,7 +242,7 @@
                     </table>
                   </div>
             </div>
-            <div class="panel panel-default">
+            {{-- <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="panel-title">
                       <h3>Export Excel</h3>
@@ -251,7 +251,7 @@
                       <a href="{{url('/Burger123/export')}}" class="btn btn-success">Export To Excel</a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- END PLACE PAGE CONTENT HERE -->
           </div>
           <!-- END CONTAINER FLUID -->
