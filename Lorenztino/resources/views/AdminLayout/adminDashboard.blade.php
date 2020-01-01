@@ -242,6 +242,16 @@
                     </table>
                   </div>
             </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                      <h3>Export Excel</h3>
+                    </div>
+                    <div class="panel-body">
+                      <a href="{{url('/Burger123/export')}}" class="btn btn-success">Export To Excel</a>
+                    </div>
+                </div>
+            </div>
             <!-- END PLACE PAGE CONTENT HERE -->
           </div>
           <!-- END CONTAINER FLUID -->
@@ -283,7 +293,6 @@
     <script>
         $(document).ready(function() {
             $('#myDataTable').DataTable();
-
         });
     </script>
     <script src="{{asset('assets/plugins/pace/pace.min.js')}}" type="text/javascript"></script>

@@ -8,6 +8,9 @@ use App\Tamu;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\UsersExport;
+
 class AdminController extends Controller
 {
     //
@@ -54,6 +57,10 @@ class AdminController extends Controller
     }
     public function addAttendance(Request $request){
         return view('AdminLayout.addAttendance');
+    }
+
+    public function exportExcel(){
+        return Excel::download(new UsersExport, 'users.xlsx');
     }
 
     public function verifiedAttendance(){

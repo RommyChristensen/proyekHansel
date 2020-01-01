@@ -31,6 +31,7 @@ Route::get('/Burger123/dashboard', 'AdminController@toDashboard');
 
 Route::get('/Burger123/insertAttendance', 'AdminController@addAttendance');
 Route::get('/Burger123/verifiedAttendance', 'AdminController@verifiedAttendance');
+Route::get('/Burger123/export/', 'AdminController@exportExcel');
 
 Route::post('/Burger123/acceptVerified', 'AdminController@acceptVerified');
 Route::post('/Burger123/rejectVerified', 'AdminController@rejectVerified');
