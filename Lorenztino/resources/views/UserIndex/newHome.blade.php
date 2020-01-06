@@ -385,9 +385,9 @@
                         <li class="nav-item mx-5">
                             <a class="nav-link" href="#events" style="color: rgba(115,82,63);">Events</a>
                         </li>
-                        <li class="nav-item mx-5">
+                        {{-- <li class="nav-item mx-5">
                             <a class="nav-link" href="#rsvp" style="color: rgba(115,82,63);">RSVP</a>
-                        </li>
+                        </li> --}}
                         <li class="nav-item mx-5">
                             <a class="nav-link" href="#gallery" style="color: rgba(115,82,63);">Gallery</a>
                         </li>
@@ -457,7 +457,7 @@
                 </div>
             </div>
 
-            <div id="rsvp" class="row rsvp_row" style="min-height: 100.4vh;">
+            {{-- <div id="rsvp" class="row rsvp_row" style="min-height: 100.4vh;">
                 <div class="col-md-5 wow fadeIn">
                 </div>
                 <div class="col-md-7 wow fadeIn my-auto">
@@ -529,7 +529,7 @@
                         </div>
                     </form>
                 </div>
-            </div>
+            </div> --}}
 
             <div id="gallery" class="row gallery_row">
                 <div class="container mx-auto px-5 py-5">
