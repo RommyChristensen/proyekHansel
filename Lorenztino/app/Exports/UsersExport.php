@@ -3,7 +3,7 @@
 namespace App\Exports;
 
 use App\Tamu;
-//use Maatwebsite\Excel\Concerns\FromCollection;
+use Maatwebsite\Excel\Concerns\FromCollection;
 
 class UsersExport implements FromCollection
 {
