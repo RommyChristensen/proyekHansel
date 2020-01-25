@@ -203,6 +203,7 @@
                                       <td>{{$item->kuota}}</td>
                                       <td>{{$item->created_at}}</td>
                                       <td>
+                                        @csrf
                                           <button type="submit" formaction="{{url('/Burger123/editAttendance')}}" name="btnEdit" value="{{$item->id}}" class="btn btn-info"><i
                                                   class="fa fa-edit"></i></button>
                                           <button type="submit" formaction="{{url('/Burger123/deleteProses')}}" name="btnDelete" value="{{$item->id}}"
