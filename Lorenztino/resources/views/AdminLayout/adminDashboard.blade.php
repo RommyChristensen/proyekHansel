@@ -203,10 +203,19 @@
                                       <td>{{$item->kuota}}</td>
                                       <td>{{$item->created_at}}</td>
                                       <td>
-                                          <button type="submit" formaction="{{url('/Burger123/editAttendance')}}" name="btnEdit" value="{{$item->id}}" class="btn btn-info"><i
-                                                  class="fa fa-edit"></i></button>
-                                          <button type="submit" formaction="{{url('/Burger123/deleteProses')}}" name="btnDelete" value="{{$item->id}}"
-                                              class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                                        <form action="{{url('/Burger123/editAttendance')}}" method="POST"> 
+                                          @csrf
+                                          <button type="submit" name="btnEdit" value="{{$item->id}}" class="btn btn-info">
+                                            <i class="fa fa-edit"></i>
+                                          </button>
+                                        </form>
+                                        <form action="{{url('/Burger123/deleteProses')}}" method="POST">
+                                            <button type="submit" name="btnDelete" value="{{$item->id}}"
+                                              class="btn btn-danger">
+                                              <i class="fa fa-trash"></i>
+                                            </button>
+                                        </form>
+                                          
                                       </td>
                                   </tr>
                                   @endforeach
