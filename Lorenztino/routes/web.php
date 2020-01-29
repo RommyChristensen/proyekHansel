@@ -32,8 +32,15 @@ Route::get('/Burger123/dashboard', 'AdminController@toDashboard');
 Route::get('/Burger123/insertAttendance', 'AdminController@addAttendance');
 Route::get('/Burger123/verifiedAttendance', 'AdminController@verifiedAttendance');
 Route::get('/Burger123/export/', 'AdminController@exportExcel');
+Route::get('/Burger123/generateQR/', 'AdminController@generateQRCode');
+Route::get('/Burger123/generateIndividualQR/', 'AdminController@generateIndividualQR');
+Route::get('/Burger123/scan', 'AdminController@scan');
+
+Route::get('/Burger123/scan2', 'AdminController@scan2');
 
 Route::post('/Burger123/acceptVerified', 'AdminController@acceptVerified');
+Route::post('/Burger123/test', 'AdminController@testajax');
+Route::post('/Burger123/getAll', 'AdminController@getAllTamu');
 Route::post('/Burger123/rejectVerified', 'AdminController@rejectVerified');
 Route::post('/Burger123/editAttendance', 'AdminController@editAttendance');
 Route::post('/Burger123/addProses', 'AdminController@addProses');

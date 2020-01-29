@@ -28,6 +28,82 @@ class AdminController extends Controller
         return view('AdminLayout.adminDashboard', ['tamu' => $this->getTamu()])->with('total',$total)->with('jumlah',$jumlah)->with('jumlahGreja',$jumlahGreja)->with('jumlahResepsi',$jumlahResepsi)->with('jumlahGrejaResepsi',$jumlahGrejaResepsi);
     }
 
+    public function scan(){
+        return view('AdminLayout.scanner');
+    }
+
+    public function scan2(){
+        return view('AdminLayout.scan2');
+    }
+
+    public function testajax(Request $req){
+        $userId = $req->id;
+
+        $user = DB::table('tamu')->where('id', $userId)->get();
+
+        echo json_encode($user);
+    }
+
+    public function getAllTamu(){
+        //$tamu = DB::table('tamu')->offset(611)->limit(9)->get();
+        //$tamu = DB::table('tamu')->where('id', '>', 667)->where('id', '<', 687)->get();
+        //$tamu = $this->getTamu();
+        //$tamu = DB::table('tamu')->where('id', '>', 714)->get();
+        $tamu = DB::table('tamu')->where('id', '>', 716)->get();
+        echo json_encode($tamu);
+    }
+
+    public function generateQRCode(){
+        //$tamu = $this->getTamu();
+        //$tamu = DB::table('tamu')->where('id', '20')->get();
+        // $tamu = DB::table('tamu')->where('id', '573')
+        //                         ->orWhere('id', '569')
+        //                         ->orWhere('id', '197')
+        //                         ->orWhere('id', '187')
+        //                         ->orWhere('id', '577')
+        //                         ->orWhere('id', '617')
+        //                         ->orWhere('id', '171')
+        //                         ->orWhere('id', '631')
+        //                         ->orWhere('id', '466')
+        //                         ->orWhere('id', '205')
+        //                         ->orWhere('id', '172')
+        //                         ->orWhere('id', '189')
+        //                         ->orWhere('id', '525')
+        //                         ->orWhere('id', '586')
+        //                         ->orWhere('id', '287')
+        //                         ->orWhere('id', '130')
+        //                         ->orWhere('id', '608')
+        //                         ->orWhere('id', '617')
+        //                         ->orWhere('id', '607')
+        //                         ->orWhere('id', '232')
+        //                         ->orWhere('id', '621')
+        //                         ->orWhere('id', '575')
+        //                         ->orWhere('id', '595')
+        //                         ->orWhere('id', '669')
+        //                         ->orWhere('id', '693')
+        //                         ->orWhere('id', '692')
+        //                         ->orWhere('id', '689')
+        //                         ->orWhere('id', '694')
+        //                         ->orWhere('id', '679')
+        //                         ->get();
+        // $temp = DB::table('tamu')->where('id', '569')->get();
+        // $tamu[] = $temp;
+
+        //$tamu = DB::table('tamu')->offset(611)->limit(9)->get();
+        //$tamu = DB::table('tamu')->where('id', '>', 667)->where('id', '<', 687)->get();
+        //$tamu = DB::table('tamu')->where('id','>', 714)->get();
+        $tamu = DB::table('tamu')->where('id', '>', 716)->get();
+        return view('AdminLayout.previewQrCode', ['tamu' => $tamu]);
+    }
+
+    public function generateIndividualQR(){
+        $tamu = DB::table('tamu')->where('id', 38)->get();
+        $id = $tamu['id'];
+        $nama = $tamu['nama'];
+        $kuota = $tamu['kuota'];
+        return view('AdminLayout.individualQrCode', ['id' => $id, 'nama' => $nama, 'kuota' => $kuota]);
+    }
+
     public function login(Request $request){
         
         $username = $request['username'];

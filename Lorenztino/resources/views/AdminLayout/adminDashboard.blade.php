@@ -249,7 +249,8 @@
                     </div>
                     <div class="panel-body">
                       <a href="{{url('/Burger123/export')}}" class="btn btn-success">Export To Excel</a>
-                    </div>
+                      <a href="{{url('/Burger123/generateQR')}}" class="btn btn-info">Generate QR Code</a>
+                      </div>
                 </div>
             </div>
             <!-- END PLACE PAGE CONTENT HERE -->

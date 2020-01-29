@@ -3,6 +3,43 @@
             font-family: 'Lato', sans-serif;
         }
 
+        @font-face {
+            font-family: 'Avenir Next B';
+            src: url('../newHome/font/Avenir Next.ttc');
+        }
+
+        @font-face {
+            font-family: 'Avenir Next M';
+            src: url('../newHome/font/Avenir.ttc');
+        }
+
+        .avenir-next-m{
+            font-family: 'Avenir Next M';
+        }
+
+        .avenir-next-b{
+            font-family: 'Avenir Next B';
+        }
+
+        #containerQR{
+            margin-bottom: 50px;
+            width: 1122px;
+            height: 1587px;
+
+        }
+
+        .box{
+            line-height: 20px;
+            border: 1px solid black;
+            width: 170px;
+            height: 302px;
+            padding-top: 8px;
+            padding-bottom: 10px;
+            text-align: center;
+            background-size: 100% 100%;
+            background-image: url("../newHome/img/background_qr.jpg");
+        }
+
         .carousel-caption .caption-title {
             font-family: 'Lato', sans-serif;
         }
